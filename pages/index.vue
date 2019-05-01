@@ -4,7 +4,7 @@
       <div class="d-none d-lg-block">
         <div class="row">
           <div class="offset-md-2 col-md-3 text-right">
-            <img src="logo-xl.png" class="logo w-75" alt=""> <br>
+            <img src="logo-xl.png" class="logo w-75 pt-2" alt=""> <br>
             <!-- mb-3 pt-2 pr-2 pl-5 -->
           </div>
           <div class="col-md-4">
@@ -28,7 +28,7 @@
       <div class="d-none d-md-block d-lg-none ">
         <div class="row">
           <div class="offset-md-2 col-md-3 text-right">
-            <img src="logo-xl.png" class="logo w-50" alt=""> <br>
+            <img src="logo-xl.png" class="logo w-50 pt-2" alt=""> <br>
           </div>
           <div class="col-md-5">
             <h5></h5>
