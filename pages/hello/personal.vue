@@ -6,7 +6,12 @@
         <p class="mb-1">
           {{ project.description }}
         </p>
-        <span class="bg-dark font-small text-light p-1 pl-2 pr-2">View on Github</span>
+        <span v-if="project.url" class="bg-dark font-small text-light p-1 pl-2 pr-2">
+          <a :href="project.url" target="_blank" class="link-white">Visit Project</a>
+        </span>
+        <span v-if="project.github" class="bg-dark font-small text-light p-1 pl-2 pr-2">
+          <a :href="project.github" target="_blank" class="link-white">View Github</a>
+        </span>
         <br><br>
       </div>
     </div>
@@ -27,32 +32,38 @@ export default {
         {
           title: ' Destiny 2 Data Exporter',
           description: 'A tool for Destiny 2 (PS4) players that allows the ability to export games stats in .JSON format.',
-          url: 'https://project.netlify.com',
+          url: 'https://xcrucibleexporter.netlify.com/',
+          github: 'https://github.com/jpoechill/xcrucibleexporter'
         },
         {
           title: 'Infamous – Destiny 2 Gambit Tracker',
           description: 'A tool for Destiny 2 (PS4) players to track and view their Gambit W/L records, and related stats.',
-          url: 'https://project.netlify.com',
+          url: 'http://xinfamous.tk/',
+          github: 'https://github.com/jpoechill/xinfamous'
         },
         {
           title: 'xNews – Aggregate News API Viewer',
           description: 'A personal, aggregate news viewer that allow one to select their own news sources, and add custom links from around the web.',
-          url: 'https://project.netlify.com',
+          url: 'https://xnews.netlify.com',
+          github: 'https://github.com/jpoechill/vuefrontendrtalk_demo'
         },
         {
           title: 'Vue, Stripe Payments',
           description: 'An application utilizing Vue.js, Firebase Cloud Function, and Stripe API to demonstrate the ability to make custom payments without a proper backend.',
-          url: 'https://project.netlify.com',
+          // url: 'https://project.netlify.com',
+          github: 'https://github.com/jpoechill/vuepayme'
         },
         {
           title: 'Simple Pinterest Clone',
           description: 'A Pinterest clone, experimenting with Firebase database features, with attention to micro-animations.',
-          url: 'https://project.netlify.com',
+          // url: 'https://project.netlify.com',
+          github: 'https://github.com/jpoechill/vue-pinterestclone'
         },
         {
           title: 'Monastium – Accomodations For Monasteries',
           description: 'A prototypal web application for finding accommodations and other goods from world monasteries.',
-          url: 'https://project.netlify.com',
+          url: 'https://monastium.com/',
+          // github: 'https://project.netlify.com'
         },
       ]
     }
@@ -69,6 +80,14 @@ export default {
 body, html {
   font-size: 18px;
   height: 100%;
+}
+
+.link-white {
+  color: #FFF;
+}
+
+.link-white:hover {
+  text-decoration: none;
 }
 
 .mh-special {
@@ -97,6 +116,10 @@ body, html {
 
 .weight-600 {
   font-weight: 600;
+}
+
+.bg-dark:hover {
+  background-color: #555!important;
 }
 
 .z-index-back {

@@ -6,7 +6,9 @@
         <p class="mb-1">
           {{ project.description }}  
         </p>
-        <span class="bg-dark font-small text-light p-1 pl-2 pr-2">Visit Project</span>
+        <span class="bg-dark font-small text-light p-1 pl-2 pr-2">
+          <a :href="project.url" target="_blank" class="link-white">Visit Project</a>
+        </span>
         <br>
         <br>
       </div>
@@ -28,33 +30,33 @@ export default {
         {
           title: 'PPCS – Restoration Services',
           description: 'PPCS is a building restoration company based in the SF, Bay Area. They are a national, family run company, having been in business for over 35 years.',
-          url: 'https://project.netlify.com',
+          url: 'https://ppc-restore.com',
         },
         {
           title: 'PortraitsDaily.com',
           description: 'PortraitsDaily.com is a personal, art portfolio website, displaying portraits of people done in watercolors, and pen-and-ink.',
-          url: 'https://project.netlify.com',
+          url: 'https://portraitsdaily.com',
         },
         {
           title: 'Poyear.com – Specialty Cupcakes and Macaroons',
-          description: 'Poyear is an entrepenuer, and baker from Oakland, CA. She work through her home, and takes orders for cakes, cupcakes, and macaroons.',
-          url: 'https://project.netlify.com',
+          description: 'Poyear is an entrepenuer, and baker from Oakland, CA. She works through her home, and takes orders for cakes, cupcakes, and macaroons.',
+          url: 'https://poyear.com',
         },
         {
           title: 'Code Self Study – Community Group',
           description: 'Code Self Study is community programming group located the Berkeley, East Bay Area. Members come from all walks of life, ',
-          url: 'https://project.netlify.com',
+          url: 'https://codeselfstudy.com',
         },
         {
           title: 'BWL Delivery – Oakland Beverages Store',
           description: 'BWL Delivery is a specialty beverages store in Oakland, CA. They are a family run business, and have been in operation for over 30 years.',
-          url: 'https://project.netlify.com',
+          url: 'http://bwldelivery.com',
         },
-        {
-          title: 'PerfectCanvas.art',
-          description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia sequi odit adipisci, voluptatum eligendi est eveniet possimus vitae unde numquam?',
-          url: 'https://project.netlify.com',
-        },
+        // {
+        //   title: 'PerfectCanvas.art',
+        //   description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia sequi odit adipisci, voluptatum eligendi est eveniet possimus vitae unde numquam?',
+        //   url: 'https://PerfectCanvas.art',
+        // },
       ]
     }
   },
@@ -84,6 +86,14 @@ body, html {
   min-height: 500px;
 }
 
+.link-white {
+  color: #FFF;
+}
+
+.link-white:hover {
+  text-decoration: none;
+}
+
 .special {
   font-size: 22px;
 }
@@ -101,6 +111,9 @@ body, html {
   font-weight: 600;
 }
 
+.bg-dark:hover {
+  background-color: #555!important;
+}
 
 .z-index-back {
   z-index: -1000;

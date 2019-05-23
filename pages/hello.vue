@@ -4,9 +4,6 @@
       <div class="w-100 position-fixed d-none d-lg-block z-index-back vh-100 overflow-hidden">
         <img src="/portrait.jpg" class="portrait h-100" alt="">
       </div>
-      <!-- <div class="w-100 position-fixed d-lg-none z-index-back overflow-hidden">
-        <img src="/portrait-centered.jpg" class="portrait w-100 h-100" alt="">
-      </div> -->
       <!-- Visible on Mobile -->
       <div class="container pt-0">
         <div class="row pt-5">

@@ -6,7 +6,12 @@
         <p class="mb-1">
           {{ project.description }}
         </p>
-        <span class="bg-dark font-small text-light p-1 pl-2 pr-2">Visit Project</span>
+        <span v-if="project.url" class="bg-dark font-small text-light p-1 pl-2 pr-2">
+          <a :href="project.url" target="_blank" class="link-white">Visit Project</a>
+        </span>
+        <span v-if="project.github" class="bg-dark font-small text-light p-1 pl-2 pr-2">
+          <a :href="project.github" target="_blank" class="link-white">View Github</a>
+        </span>
         <br>
         <br>
       </div>
@@ -28,17 +33,17 @@ export default {
         {
           title: 'Shipt FE Exerise',
           description: 'A frontend exercise for Shipt – building out a production-ready application from design mock and requirements brief.',
-          url: 'https://project.netlify.com',
+          github: 'https://github.com/jpoechill/vueshiptexercise',
         },
         {
           title: 'Lead Genius FE Exercise',
           description: 'A frontend exercise for Lead Genuis – building out a simple to-do list application, from start to finish.',
-          url: 'https://project.netlify.com',
+          github: 'https://github.com/jpoechill/vueleadgeniusdemo',
         },
         {
           title: 'Eaze FE Exercise',
           description: 'A frontend exercise for Eaze – building a simple GIPHY API viewer in the style of Netflix.',
-          url: 'https://project.netlify.com',
+          github: 'https://github.com/jpoechill/vueeazeexercise',
         }
       ]
     }
@@ -65,6 +70,14 @@ body, html {
   min-width: 150px;
 }
 
+.link-white {
+  color: #FFF;
+}
+
+.link-white:hover {
+  text-decoration: none;
+}
+
 .portrait {
   min-height: 500px;
 }
@@ -86,6 +99,9 @@ body, html {
   font-weight: 600;
 }
 
+.bg-dark:hover {
+  background-color: #555!important;
+}
 
 .z-index-back {
   z-index: -1000;
