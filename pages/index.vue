@@ -1,48 +1,20 @@
 <template>
   <div>
-    <div class="w-100" style="background-color: #4A90E2;">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12 py-3"></div>
+    <div class="container pt-2">
+      <div class="row">
+        <div class="col-md-12 text-center font-small">
+          <span class="pr-3"><nuxt-link to="/active">Active</nuxt-link></span>
+          <span class="pr-3"><nuxt-link to="/">Showcase</nuxt-link></span>
+          <span class="pr-3"><nuxt-link to="/all">Recent</nuxt-link></span>
+        </div>
+        <div class="col-md-12">
+          <hr>
         </div>
       </div>
     </div>
 
-    
-    <div class="w-100 pb-3" style="background-color: #F7F7F7;">
-    <div class="container">
-      <div class="row pt-3">
-        <div class="col-md-4 text-responsive">
-            <span class="font-weight-bold">
-              <nuxt-link to="/">Po Rith</nuxt-link>
-            </span> | 
-            <span>
-              Design x Javascript (Vue.js)
-            </span>
-        </div>
-        <div class="col-md-8 text-right text-responsive">
-          <span class="pr-3"><nuxt-link to="/about">About</nuxt-link></span>
-          <span class="pr-3"><nuxt-link to="/">Working Projects</nuxt-link></span>
-          <span class="pr-3"><nuxt-link to="/personal">Personal Projects</nuxt-link></span>
-          <span class="pr-3"><nuxt-link to="/contact">Contact</nuxt-link></span>
-        </div>
-      </div>
-    </div>
-    </div>
+    <nuxt/>
 
-    <div class="w-100 pt-2 pb-5" style="background-color: #FFF;">
-      <nuxt/>
-    </div>
-
-    <div class="w-100 py-4">
-      <div class="container">
-        <div class="row text-center text-white">
-          <div class="col-md-12">
-            Rithfolio.com © 2019 
-          </div>
-        </div>
-      </div>
-    </div>
   </div>
 </template>
 
@@ -56,34 +28,4 @@ export default {
 </script>
 
 <style>
-body, html {
-  font-size: 18px;
-  height: 100%;
-}
-
-/* .container {
-  min-height: 100vh;
-} */
-
-.logo {
-  min-width: 150px;
-}
-
-.special {
-  font-size: 22px;
-}
-
-.weight-400 {
-  font-weight: 400;
-}
-
-.weight-600 {
-  font-weight: 600;
-}
-
-@media only screen and (max-width: 600px) {
-  .text-responsive {
-    text-align: center!important;
-  }
-}
 </style>
