@@ -5,7 +5,7 @@
         <div class="col-md-12 text-center font-small">
           <span class="pr-3"><nuxt-link to="/personal">General</nuxt-link></span>
           <!-- <span class="pr-3"><nuxt-link to="/about">Other</nuxt-link></span> -->
-          <span class="pr-3"><nuxt-link to="/personal/all">All</nuxt-link></span>
+          <span class="pr-3"><nuxt-link to="/personal/all">Everything</nuxt-link></span>
         </div>
         <div class="col-md-12">
           <hr>
