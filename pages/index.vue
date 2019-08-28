@@ -1,73 +1,44 @@
 <template>
   <div>
-    <div class="container d-flex align-items-center justify-contents-center pt-5">
-      <div class="d-none d-lg-block">
+    <div class="w-100" style="background-color: #4A90E2;">
+      <div class="container">
         <div class="row">
-          <div class="offset-md-2 col-md-3 text-right">
-            <img src="logo-xl.png" class="logo w-75 pt-2" alt=""> <br>
-            <!-- mb-3 pt-2 pr-2 pl-5 -->
-          </div>
-          <div class="col-md-4">
-            <h5></h5>
-              <span class="weight-600 special">Po Rith</span>
-              <p>
-                <span class="weight-400"><i>design + vue.js development</i></span>
-              </p>
-              <p>
-                currently working on: <br>
-                <a href="https://portraitsdaily.com">portraitsdaily.com</a>
-              </p>
-              <p>
-                heys@rithfolio.com<br>
-                <a href="https:/medium.com/rithfolio">Medium</a> | <a href="https://github.com/jpoechill">Github</a> | <a href="https://dribbble.com/jpoechill">Dribbble</a>
-              </p>
-            <br><br>
-          </div>
+          <div class="col-md-12 py-3"></div>
         </div>
       </div>
-      <div class="d-none d-md-block d-lg-none ">
-        <div class="row">
-          <div class="offset-md-2 col-md-3 text-right">
-            <img src="logo-xl.png" class="logo w-50 pt-2" alt=""> <br>
-          </div>
-          <div class="col-md-5">
-            <h5></h5>
-              <span class="weight-600 special">Po Rith</span>
-              <p>
-                <span class="weight-400"><i>design + vue.js development</i></span>
-              </p>
-              <p>
-                currently working on: <br>
-                <a href="https://portraitsdaily.com">portraitsdaily.com</a>
-              </p>
-              <p>
-                heys@rithfolio.com<br>
-                <a href="https:/medium.com/rithfolio">Medium</a> | <a href="https://github.com/jpoechill">Github</a> | <a href="https://dribbble.com/jpoechill">Dribbble</a>
-              </p>
-            <br><br>
-          </div>
+    </div>
+
+    
+    <div class="w-100 pb-3" style="background-color: #F7F7F7;">
+    <div class="container">
+      <div class="row pt-3">
+        <div class="col-md-4 text-responsive">
+            <span class="font-weight-bold">
+              <nuxt-link to="/">Po Rith</nuxt-link>
+            </span> | 
+            <span>
+              Design x Javascript (Vue.js)
+            </span>
+        </div>
+        <div class="col-md-8 text-right text-responsive">
+          <span class="pr-3"><nuxt-link to="/about">About</nuxt-link></span>
+          <span class="pr-3"><nuxt-link to="/">Working Projects</nuxt-link></span>
+          <span class="pr-3"><nuxt-link to="/personal">Personal Projects</nuxt-link></span>
+          <span class="pr-3"><nuxt-link to="/contact">Contact</nuxt-link></span>
         </div>
       </div>
-      <div class="d-lg-none d-md-none">
-        <div class="row">
-          <div class="offset-md-2 col-md-3 text-center">
-            <img src="logo-xl.png" class="w-25 logo" alt=""> <br>
-          </div>
-          <div class="col-md-4 text-center pt-4">
-            <h5></h5>
-              <span class="weight-600 special">Po Rith</span>
-              <p>
-                <span class="weight-400"><i>design + vue.js development</i></span>
-              </p>
-              <p>
-                currently working on: <br>
-                <a href="https://portraitsdaily.com">portraitsdaily.com</a>
-              </p>
-              <p>
-                heys@rithfolio.com<br>
-                <a href="https:/medium.com/rithfolio">Medium</a> | <a href="https://github.com/jpoechill">Github</a> | <a href="https://dribbble.com/jpoechill">Dribbble</a>
-              </p>
-            <br><br>
+    </div>
+    </div>
+
+    <div class="w-100 pt-2 pb-5" style="background-color: #FFF;">
+      <nuxt/>
+    </div>
+
+    <div class="w-100 py-4">
+      <div class="container">
+        <div class="row text-center text-white">
+          <div class="col-md-12">
+            Rithfolio.com © 2019 
           </div>
         </div>
       </div>
@@ -76,22 +47,11 @@
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
-
 export default {
-  components: {
-    Logo
-  },
   data() {
-    return {
-      emailText: "Email"
-    }
+    return {}
   },
-  methods: {
-    handleToggle () {
-      this.emailText = 'heys@rithfolio.com'
-    }
-  },
+  transition: 'fade'
 }
 </script>
 
@@ -101,9 +61,9 @@ body, html {
   height: 100%;
 }
 
-.container {
+/* .container {
   min-height: 100vh;
-}
+} */
 
 .logo {
   min-width: 150px;
@@ -119,5 +79,11 @@ body, html {
 
 .weight-600 {
   font-weight: 600;
+}
+
+@media only screen and (max-width: 600px) {
+  .text-responsive {
+    text-align: center!important;
+  }
 }
 </style>

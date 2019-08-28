@@ -1,20 +1,22 @@
 <template>
   <div>
-    <div class="row pt-2">
-      <div class="col-md-6" v-for="(project, index) in projects" :key="index">
-        <span class="weight-600">{{ project.title }}</span>
-        <p class="mb-1">
-          {{ project.description }}
-        </p>
-        <span v-if="project.url" class="bg-dark font-small text-light p-1 pl-2 pr-2">
-          <a :href="project.url" target="_blank" class="link-white">Visit Project</a>
-        </span>
-        <span v-if="project.github" class="bg-dark font-small text-light p-1 pl-2 pr-2">
-          <a :href="project.github" target="_blank" class="link-white">View Github</a>
-        </span>
-        <br><br>
+    <transition name="fade" appear>
+      <div class="row pt-2">
+        <div class="col-md-6" v-for="(project, index) in projects" :key="index">
+          <span class="weight-600">{{ project.title }}</span>
+          <p class="mb-1">
+            {{ project.description }}
+          </p>
+          <span v-if="project.url" class="bg-dark font-small text-light p-1 pl-2 pr-2">
+            <a :href="project.url" target="_blank" class="link-white">Visit Project</a>
+          </span>
+          <span v-if="project.github" class="bg-dark font-small text-light p-1 pl-2 pr-2">
+            <a :href="project.github" target="_blank" class="link-white">View Github</a>
+          </span>
+          <br><br>
+        </div>
       </div>
-    </div>
+    </transition>
   </div>
 </template>
 
@@ -50,13 +52,13 @@ export default {
         {
           title: 'Vue, Stripe Payments',
           description: 'An application utilizing Vue.js, Firebase Cloud Function, and Stripe API to demonstrate the ability to make custom payments without a proper backend.',
-          // url: 'https://project.netlify.com',
+          url: 'https://zen-johnson-ca4f83.netlify.com/',
           github: 'https://github.com/jpoechill/vuepayme'
         },
         {
           title: 'Simple Pinterest Clone',
           description: 'A Pinterest clone, experimenting with Firebase database features, with attention to micro-animations.',
-          // url: 'https://project.netlify.com',
+          url: 'https://wizardly-stallman-dd6025.netlify.com/',
           github: 'https://github.com/jpoechill/vue-pinterestclone'
         },
         {

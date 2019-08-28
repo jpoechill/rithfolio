@@ -10,18 +10,20 @@
           <div class="offset-md-3 pt-4 pr-4 pb-3 col-md-9 bg-light">
             <div class="pl-3">
               <div class="row">
-                <div class="col-md-6">
-                  <h3>Po Rith</h3>
+                <div class="col-md-12">
+                  <div class="d-inline-block">
+                    <h3>Po Rith</h3>
+                  </div>
+                  <div class="float-right">
+                    <!-- <img src="/social/twitter.png" class="logo-social" alt="Twitter Logo"> -->
+                    <img src="/social/github.png" class="logo-social" alt="Github Logo">
+                    <img src="/social/medium.png" class="logo-social" alt="Medium Logo">
+                    <!-- <img src="/social/dribbble.png" class="logo-social" alt="Dribbble Logo"> -->
+                    <img src="/social/linkedin.png" class="logo-social" alt="LinkedIn Logo">
+                  </div>
                   <h5 class="pb-0"><i>Design + Vue.js Development</i></h5>
                   heys@rithfolio.com 
                   <br><br>
-                </div>
-                <div class="col-md-6 text-right">
-                  <img src="/social/twitter.png" class="logo-social" alt="Twitter Logo">
-                  <img src="/social/github.png" class="logo-social" alt="Github Logo">
-                  <img src="/social/medium.png" class="logo-social" alt="Medium Logo">
-                  <img src="/social/dribbble.png" class="logo-social" alt="Dribbble Logo">
-                  <img src="/social/linkedin.png" class="logo-social" alt="LinkedIn Logo">
                 </div>
               </div>
               <div class="row">
@@ -109,4 +111,5 @@ body, html {
 .z-index-back {
   z-index: -1000;
 }
+
 </style>

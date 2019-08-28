@@ -1,18 +1,24 @@
 <template>
   <div>
-    <div class="row pt-2">
-      <div class="col-md-6" v-for="(project, index) in projects" :key="index">
-        <span class="weight-600">{{ project.title }}</span>
-        <p class="mb-1">
-          {{ project.description }}  
-        </p>
-        <span class="bg-dark font-small text-light p-1 pl-2 pr-2">
-          <a :href="project.url" target="_blank" class="link-white">Visit Project</a>
-        </span>
-        <br>
-        <br>
+    <transition name="fade" appear>
+      <div class="row pt-2">
+        <div class="col-md-6" v-for="(project, index) in projects" :key="index">
+          <span class="weight-600">{{ project.title }}</span>
+          <p class="mb-1">
+            {{ project.description }}  
+          </p>
+          <span class="bg-dark font-small text-light p-1 pl-2 pr-2">
+            <a :href="project.url" target="_blank" class="link-white">Visit Project</a>
+          </span>
+          <span v-if="project.github" class="bg-dark font-small text-light p-1 pl-2 pr-2">
+            <a :href="project.github" target="_blank" class="link-white">View Github</a>
+          </span>
+          <br>
+          <br>
+        </div>
       </div>
-    </div>
+    </transition>
+    
   </div>
 </template>
 
@@ -31,26 +37,31 @@ export default {
           title: 'PPCS – Restoration Services',
           description: 'PPCS is a building restoration company based in the SF, Bay Area. They are a national, family run company, having been in business for over 35 years.',
           url: 'https://ppc-restore.com',
+          github: 'https://github.com/jpoechill/ppcs/'
         },
         {
           title: 'PortraitsDaily.com',
           description: 'PortraitsDaily.com is a personal, art portfolio website, displaying portraits of people done in watercolors, and pen-and-ink.',
           url: 'https://portraitsdaily.com',
+          github: 'https://github.com/jpoechill/xPortraitsby'
         },
         {
           title: 'Poyear.com – Specialty Cupcakes and Macaroons',
           description: 'Poyear is an entrepenuer, and baker from Oakland, CA. She works through her home, and takes orders for cakes, cupcakes, and macaroons.',
           url: 'https://poyear.com',
+          github: 'https://github.com/jpoechill/vuepoyearcom/'
         },
         {
           title: 'Code Self Study – Community Group',
-          description: 'Code Self Study is community programming group located the Berkeley, East Bay Area. Members come from all walks of life, ',
+          description: 'Code Self Study is community programming group located the Berkeley, East Bay Area. Members come from all walks of life.',
           url: 'https://codeselfstudy.com',
+          github: 'https://github.com/jpoechill/vuecodeselfstudy'
         },
         {
           title: 'BWL Delivery – Oakland Beverages Store',
           description: 'BWL Delivery is a specialty beverages store in Oakland, CA. They are a family run business, and have been in operation for over 30 years.',
           url: 'http://bwldelivery.com',
+          github: 'https://github.com/jpoechill/vuebwliqs'
         },
         // {
         //   title: 'PerfectCanvas.art',
@@ -118,4 +129,5 @@ body, html {
 .z-index-back {
   z-index: -1000;
 }
+
 </style>
