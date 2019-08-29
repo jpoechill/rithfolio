@@ -34,7 +34,7 @@
       <nuxt/>
     </div>
 
-    <div class="w-100 py-4">
+    <div class="w-100 pt-4 pb-3">
       <div class="container">
         <div class="row text-center text-white">
           <div class="col-md-12">
