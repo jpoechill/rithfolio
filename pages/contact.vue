@@ -2,7 +2,7 @@
   <div>
 
     <div class="container pt-2">
-      <div class="row pt-4 pb-1">
+      <div class="row pt-4 pb-4 mb-2">
         <div class="offset-md-2 col-md-8">
           <p>
             Yumm, algorithms..?!

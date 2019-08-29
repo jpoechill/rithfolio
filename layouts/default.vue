@@ -30,11 +30,11 @@
     </div>
     </div>
 
-    <div class="w-100 pt-2 pb-5" style="background-color: #FFF;">
+    <div class="w-100 pt-2 pb-4" style="background-color: #FFF;">
       <nuxt/>
     </div>
 
-    <div class="w-100 pt-4 pb-3">
+    <div class="w-100 py-4">
       <div class="container">
         <div class="row text-center text-white">
           <div class="col-md-12">

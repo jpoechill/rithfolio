@@ -2,7 +2,7 @@
   <div>
 
     <div class="container">
-      <div class="row pt-5">
+      <div class="row pt-5 pb-4">
         <div class="offset-md-2 col-md-8 text-center">
           <div class="bg-light m-auto" style="border-radius: 200px; width: 200px; height: 200px;">
             <img src="/portrait-round.png" class="w-100" alt="">
