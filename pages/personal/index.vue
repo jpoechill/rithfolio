@@ -22,7 +22,7 @@
           <p class="mb-1">
             I experimented with building working web scrapers through different channels of web developlement.
           </p>
-          <a href="">Demo</a> | <a href="">Github</a>
+          <a href="https://loving-mayer-d80a26.netlify.com/.netlify/functions/dboom-mostrecent">Demo 1</a>, <a href="https://loving-mayer-d80a26.netlify.com/.netlify/functions/dboom-highlights">Demo 2</a> | <a href="https://github.com/jpoechill/netlifyfunctions-helloworld/">Github</a>
         </div>
         <div class="col-md-6 pb-4">
           <span class="font-weight-bold text-light">

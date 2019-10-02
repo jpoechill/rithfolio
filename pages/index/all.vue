@@ -32,10 +32,10 @@
         </div>
         <div class="col-md-6 pb-4">
           <span class="font-weight-bold text-light">
-            bwlDelivery.com
+            Mellanacafe.com
           </span><br>
           <p class="mb-1">
-            A tool for Destiny 2 (PS4) players that allows the ability to export games stats in .JSON format.
+            Mellana Café is a café located in the North Oakland area, and offers hand craft health shakes, gourmet sandwiches, and coffee.
           </p>
           <a href="">Homepage (Archived)</a> | <a href="">Github</a>
         </div>

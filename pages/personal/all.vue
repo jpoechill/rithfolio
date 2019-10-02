@@ -20,7 +20,7 @@
             Web Scrapers
           </span><br>
           <p class="mb-1">
-            I experimented with building working web scrapers through different channels of web developlement.
+            An experiment in building working web scrapers through different channels of serverless web developlement.
           </p>
           <a href="">Demo</a> | <a href="">Github</a>
         </div>
@@ -29,7 +29,7 @@
             xNews
           </span><br>
           <p class="mb-1">
-            I built a personal, aggregate new viewer with a focus on minimalism and simple design. 
+            A personal, aggregate new viewer with a focus on minimalism and simple design. 
           </p>
           <a href="">Demo</a> | <a href="">Github</a>
         </div>
@@ -38,7 +38,7 @@
             Destiny 2 Data Exporter
           </span><br>
           <p class="mb-1">
-            I built a tool for Destiny 2 (PS4) players that can export current player stats in .JSON format.
+            A tool for Destiny 2 (PS4) players that can export current player stats in .JSON format.
           </p>
           <a href="">Demo</a> | <a href="">Github</a>
         </div>
@@ -47,7 +47,7 @@
             Destiny 2 Gambit Tracker
           </span><br>
           <p class="mb-1">
-            I built a tool for Destiny 2 (PS4) players that tracks a players current Gambit score for those going for the 'Reckoning' title.
+            A tool for Destiny 2 (PS4) players that tracks a players current Gambit score for those going for the 'Reckoning' title.
           </p>
           <a href="">Demo</a> | <a href="">Github</a>
         </div>
@@ -56,7 +56,7 @@
             Pinterest Clone
           </span><br>
           <p class="mb-1">
-            A tool for Destiny 2 (PS4) players that allows the ability to export games stats in .JSON format.
+            A simple Pinterest clone made with Vue.js, Bootstrap, and Firebase's Serverless DB.
           </p>
           <a href="">Demo</a> | <a href="https://github.com/jpoechill/pinterestclone">Github</a>
         </div>
@@ -65,7 +65,7 @@
             Vue, Stripe Payments
           </span><br>
           <p class="mb-1">
-            A tool for Destiny 2 (PS4) players that allows the ability to export games stats in .JSON format.
+            A simple serverless application that tests abilities to make Stripe payments sans a proper backend.
           </p>
           <a href="">Demo</a> | <a href="">Github</a>
         </div>
