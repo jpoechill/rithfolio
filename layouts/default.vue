@@ -12,7 +12,7 @@
     <div class="w-100 pb-3" style="background-color: #F7F7F7;">
     <div class="container">
       <div class="row pt-3">
-        <div class="col-md-4 text-responsive">
+        <div class="col-md-4 pb-2 text-responsive">
             <span class="font-weight-bold">
               <nuxt-link to="/working">Po Rith</nuxt-link>
             </span> | 
@@ -22,7 +22,7 @@
         </div>
         <div class="col-md-8 text-right text-responsive">
           <span class="pr-3" v-for="(link, index) in links" :key="index">
-            <nuxt-link :to="link.url" class="nounderline" :class="{ active: link.active }">{{ link.title }}</nuxt-link>
+            <nuxt-link :to="link.url" class="nounderline text-nowrap" :class="{ active: link.active }">{{ link.title }}</nuxt-link>
           </span>
         </div>
       </div>
@@ -82,16 +82,17 @@
         ]
       }
     },
-    watch:{
-      $route (to, from){
+    created() {
+      this.checkLinks()
+    },
+    methods: {
+      checkLinks: function () {
         let self = this
 
         this.links = this.links.map(function (link) {
           // update schema if page route matches link url
-          let currLink = link
 
-          // console.log(self.$route.path)
-          console.log(currLink.url)
+          let currLink = link
 
           if (self.$route.path.split('/')[1] === currLink.url.split('/')[1]) {
             currLink.active = true
@@ -101,6 +102,11 @@
 
           return link
         })
+      }
+    },
+    watch:{
+      $route (to, from){
+        this.checkLinks()
       }
     },
     transition: 'fade'

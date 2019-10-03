@@ -7,7 +7,7 @@
       </div>
       <div class="row">
         <div class="col-md-8">
-          <img src="/browser-02.png" class="w-100" alt="">
+          <img src="/browser-03.png" class="w-100" alt="">
         </div>
         <div class="col-md-4">
           <p>
