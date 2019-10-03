@@ -19,7 +19,7 @@
           <p class="mb-1">
             Code Self Study is an open, community-based programming group that meets twice a week in Berkeley, CA.
           </p>
-          <a href="">Homepage (Archived)</a> | <a href="">Github</a>
+          <a href="https://codeselfstudy-2019.netlify.com">Homepage (Archived)</a> | <a href="">Github</a>
         </div>
         <div class="col-md-6 pb-4">
           <span class="font-weight-bold text-light">

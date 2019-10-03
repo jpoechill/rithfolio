@@ -14,9 +14,9 @@
               DjaoDjin
             </span><br>
             <p class="mb-1">
-              An integrated <em>SaaS</em> service offering full-service payment and account management features for clients.
+              An integrated <em>SaaS</em> product offering full-service payment and account management features for small businesses.
             </p>
-            <a href="https://djaodjin.com">Homepage</a> | <a href="https://dd-dashboard.netlify.com">Prototype</a> | <a href="https://github.com/djaodjin/djaoapp">Github</a>
+            <a href="/studies/">Case Study</a> | <a href="https://dd-dashboard.netlify.com">Prototype</a> | <a href="https://djaodjin.com">Homepage</a> | <a href="https://github.com/djaodjin/djaoapp">Github</a>
           </div>
         </div>
         <div class="col-md-6 pb-4">

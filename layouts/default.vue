@@ -14,17 +14,16 @@
       <div class="row pt-3">
         <div class="col-md-4 text-responsive">
             <span class="font-weight-bold">
-              <nuxt-link to="/">Po Rith</nuxt-link>
+              <nuxt-link to="/working">Po Rith</nuxt-link>
             </span> | 
             <span>
               Design x Javascript (Vue.js)
             </span>
         </div>
         <div class="col-md-8 text-right text-responsive">
-          <span class="pr-3"><nuxt-link to="/about">About</nuxt-link></span>
-          <span class="pr-3"><nuxt-link to="/">Working Projects</nuxt-link></span>
-          <span class="pr-3"><nuxt-link to="/personal">Personal Projects</nuxt-link></span>
-          <span class="pr-3"><nuxt-link to="/contact">Contact</nuxt-link></span>
+          <span class="pr-3" v-for="(link, index) in links" :key="index">
+            <nuxt-link :to="link.url" class="nounderline" :class="{ active: link.active }">{{ link.title }}</nuxt-link>
+          </span>
         </div>
       </div>
     </div>
@@ -50,6 +49,28 @@
   export default {
     data () {
       return {
+        links: [
+          {
+            active: false,
+            title: 'About',
+            url: '/about'
+          },
+          {
+            active: false,
+            title: 'Working Projects',
+            url: '/working'
+          },
+          {
+            active: false,
+            title: 'Personal Projects',
+            url: '/personal'
+          },
+          {
+            active: false,
+            title: 'Contact',
+            url: '/contact'
+          }
+        ],
         title: 'Po Rith | Rithfolio.com'
       }
     },
@@ -59,6 +80,27 @@
         meta: [
           { hid: 'Po Rith | Rithfolio.com', name: 'Po Rith | Rithfolio.com', content: 'Po Rith is a designer and vue.js developer from Oakland, CA.' }
         ]
+      }
+    },
+    watch:{
+      $route (to, from){
+        let self = this
+
+        this.links = this.links.map(function (link) {
+          // update schema if page route matches link url
+          let currLink = link
+
+          // console.log(self.$route.path)
+          console.log(currLink.url)
+
+          if (self.$route.path.split('/')[1] === currLink.url.split('/')[1]) {
+            currLink.active = true
+          } else {
+            currLink.active = false
+          }
+
+          return link
+        })
       }
     },
     transition: 'fade'
@@ -97,6 +139,15 @@ body {
 
 .weight-600 {
   font-weight: 600;
+}
+
+.active {
+  padding-bottom: 2px;
+  border-bottom: 3px solid #ddd;
+}
+
+.nounderline {
+  text-decoration: none !important
 }
 
 @media only screen and (max-width: 600px) {

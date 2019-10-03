@@ -3,9 +3,8 @@
     <div class="container pt-2">
       <div class="row">
         <div class="col-md-12 text-center font-small">
-          <span class="pr-3"><nuxt-link to="/personal">General</nuxt-link></span>
-          <!-- <span class="pr-3"><nuxt-link to="/about">Other</nuxt-link></span> -->
-          <span class="pr-3"><nuxt-link to="/personal/all">Everything</nuxt-link></span>
+          <span class="pr-3"><nuxt-link to="/personal" class="nounderline">General</nuxt-link></span>
+          <span class="pr-3"><nuxt-link to="/personal/all" class="active nounderline" >Everything</nuxt-link></span>
         </div>
         <div class="col-md-12">
           <hr>
