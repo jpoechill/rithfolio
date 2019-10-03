@@ -35,7 +35,7 @@
             Mellana Café
           </span><br>
           <p class="mb-1">
-            Mellana Café is a café located in the North Oakland area, and offers hand-crafted health shakes, gourmet sandwiches, and coffee.
+            Mellana Café is a café located in the South Berkeley/Northern Oakland area, and offers hand-crafted health shakes, gourmet sandwiches, and coffee.
           </p>
           <a href="https://mellanacafe.com">Homepage</a>
         </div>
