@@ -32,12 +32,21 @@
         </div>
         <div class="col-md-6 pb-4">
           <span class="font-weight-bold text-light">
-            Mellanacafe.com
+            Mellana Café
           </span><br>
           <p class="mb-1">
             Mellana Café is a café located in the North Oakland area, and offers hand craft health shakes, gourmet sandwiches, and coffee.
           </p>
-          <a href="">Homepage (Archived)</a> | <a href="">Github</a>
+          <a href="https://mellanacafe.com">Homepage</a>
+        </div>
+        <div class="col-md-6 pb-4">
+          <span class="font-weight-bold text-light">
+            Broadway Liquors
+          </span><br>
+          <p class="mb-1">
+            Broadway Liquors is a family owned, Oakland-based beverages store specializing in curated drinks and spirits.
+          </p>
+          <a href="https://bwldelivery.netlify.com">Homepage</a> | <a href="https://github.com/jpoechill/vuebwliqs">Github</a>
         </div>
       </div>
     </div>
