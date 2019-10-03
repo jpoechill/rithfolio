@@ -28,7 +28,7 @@
             xNews
           </span><br>
           <p class="mb-1">
-            A personal, aggregate new viewer with a focus on minimalism and simple design. 
+            A personal, aggregate news viewer with a focus on minimalism and simple design. 
           </p>
           <a href="">Demo</a> | <a href="">Github</a>
         </div>
