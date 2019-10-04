@@ -19,7 +19,7 @@
             Web Scrapers
           </span><br>
           <p class="mb-1">
-            I experimented with building working web scrapers through different channels of serverless web developlement.
+            An experiment in building working web scrapers through different channels of serverless web developlement.
           </p>
           <a href="https://loving-mayer-d80a26.netlify.com/.netlify/functions/dboom-mostrecent">Demo 1</a>, <a href="https://loving-mayer-d80a26.netlify.com/.netlify/functions/dboom-highlights">Demo 2</a> | <a href="https://github.com/jpoechill/netlifyfunctions-helloworld/">Github</a>
         </div>
@@ -28,7 +28,7 @@
             xNews
           </span><br>
           <p class="mb-1">
-            I built a personal, aggregate new viewer with a focus on minimalism and simple design. 
+            A personal, aggregate news viewer with a focus on minimalism and simple design. 
           </p>
           <a href="https://xnews.netlify.com">Demo</a> | <a href="https://github.com/jpoechill/vuefrontendrtalk_demo">Github</a>
         </div>
