@@ -1,14 +1,12 @@
 <template>
   <div>
-    <div class="w-100" style="background-color: #4A90E2;">
+    <div class="w-100 custom-gradient">
       <div class="container">
         <div class="row">
           <div class="col-md-12 py-3"></div>
         </div>
       </div>
     </div>
-
-    
     <div class="w-100 pb-3" style="background-color: #F7F7F7;">
     <div class="container">
       <div class="row pt-3">
@@ -35,9 +33,9 @@
 
     <div class="w-100 py-4">
       <div class="container">
-        <div class="row text-center text-white">
+        <div class="row text-center">
           <div class="col-md-12">
-            Rithfolio.com © 2019 
+            🐴 🦄 Rithfolio.com © 2019
           </div>
         </div>
       </div>
@@ -121,12 +119,37 @@ body, html {
 
 body {
   color: #333;
-  background-color: #333!important;
+  background-color: #f7f7f7!important;
+}
+
+.custom-gradient {
+  background: linear-gradient(215deg, #ff0000, #feff00, #6bff00, #00ffe6, #0100ff, #cc00ff, #ff0000);
+  background-size: 1400% 1400%;
+
+  -webkit-animation: AnimationName 30s ease infinite;
+  -moz-animation: AnimationName 30s ease infinite;
+  animation: AnimationName 30s ease infinite;
+}
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 51%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 51%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 51%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 51%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 51%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 51%}
 }
 
 .fade-enter-active, .fade-leave-active {
   transition: opacity .2s;
 }
+
 .fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
   opacity: 0;
 }
