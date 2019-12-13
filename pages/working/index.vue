@@ -35,7 +35,7 @@ export default {
         },
         {
           active: false,
-          title: 'Recent',
+          title: 'Most Recent',
           url: '/working/all'
         },
       ]

@@ -14,6 +14,15 @@
         </div>
         <div class="col-md-6 pb-4">
           <span class="font-weight-bold text-light">
+            IPMP
+          </span><br>
+          <p class="mb-1">
+            IPMP (Integrative Pain Management Program) is a health-therapy group organized by members of the SFDPH in San Francisco, CA. 
+          </p>
+          <a href="/">Case Study</a> | <a href="https://sfdph.org">SFDPH Homepage</a>
+        </div>
+        <div class="col-md-6 pb-4">
+          <span class="font-weight-bold text-light">
             Code Self Study
           </span><br>
           <p class="mb-1">
@@ -35,7 +44,7 @@
             Mellana Café
           </span><br>
           <p class="mb-1">
-            Mellana Café is a café located in the South Berkeley/Northern Oakland area, and offers hand-crafted health shakes, gourmet sandwiches, and coffee.
+            Mellana Café is a café located in South Berkeley/Northern Oakland, offering hand-made juices, gourmet sandwiches, and coffee.
           </p>
           <a href="https://mellanacafe.com">Homepage</a>
         </div>

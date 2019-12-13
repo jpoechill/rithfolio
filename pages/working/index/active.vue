@@ -13,6 +13,15 @@
         </div>
         <div class="col-md-6 pb-4">
           <span class="font-weight-bold text-light">
+            Sun Process
+          </span><br>
+          <p class="mb-1">
+            Sun is a meditation teacher and guru working in the Bay Area. Her work is a culmination of 20+ years of active practice and teaching.
+          </p>
+          <a href="https://sunyom.com">Homepage</a>
+        </div>
+        <div class="col-md-6 pb-4">
+          <span class="font-weight-bold text-light">
             UN Survivor Application (and Dashboard)
           </span><br>
           <p class="mb-1">
