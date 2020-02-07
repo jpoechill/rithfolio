@@ -72,13 +72,13 @@
       </div>
     </div>
 
-    <div class="container">
+    <!-- <div class="container">
       <div class="row">
         <div class="col-md-12 text-center mx-2 my-2 text-white py-2 text-uppercase weight-bold" style="background-color: #007AFF; font-weight: 600; letter-spacing: 1.5px; cursor: pointer;">
           More Projects
         </div>
       </div>
-    </div>
+    </div> -->
   </div>
 </template>
 

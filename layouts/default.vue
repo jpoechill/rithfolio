@@ -35,7 +35,7 @@
       <div class="container">
         <div class="row text-center">
           <div class="col-md-12">
-            🐴 🦄 Rithfolio.com © 2019
+            👨‍🌾 🙌 Rithfolio.com © 2019
           </div>
         </div>
       </div>
