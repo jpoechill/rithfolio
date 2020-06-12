@@ -31,12 +31,12 @@
       <nuxt/>
     </div>
 
-    <div class="w-100 py-4 bg-white">
+    <div class="w-100 py-4">
       <div class="container">
         <div class="row text-center">
           <div class="col-md-12">
             <!-- dream deeply ~ <br><br> -->
-            <!-- 👨‍🌾 🙌 Rithfolio.com © 2019 -->
+            <!-- Rithfolio.com © 2020 -->
           </div>
         </div>
       </div>
@@ -114,7 +114,7 @@
 
 <style>
 body, html {
-  font-size: 18px;
+  font-size: 16px;
   height: 100%;
 }
 

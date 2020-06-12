@@ -22,17 +22,18 @@
         <div class="col-md-6 pb-4">
           <div class="w-100 mb-1 position-relative fixed-ratio">
             <div class="position-absolute">
-              <img src="/browser-03.png" class="w-100" alt="">
+              <img src="/browser-05.jpg" class="w-100" alt="">
             </div>
           </div>
           <div class="pl-2">
             <span class="font-weight-bold text-light">
-              DjaoDjin
+              Mellana Café
             </span><br>
             <p class="mb-1">
-              An integrated <em>SaaS</em> product offering full-service payment and account management features for small businesses.
+              Mellana Café is a café located in South Berkeley/Northern Oakland, offering hand-made juices, gourmet sandwiches, and coffee.
             </p>
-            <nuxt-link to="/studies/">Case Study</nuxt-link> | <a href="https://dd-dashboard.netlify.com">Prototype</a> | <a href="https://djaodjin.com">Homepage</a> | <a href="https://github.com/djaodjin/djaoapp">Github</a>
+            <a href="https://mellanacafe.com">Homepage</a> | 
+            <a href="https://instagram.com/mellanacafe">Instagram</a>
           </div>
         </div>
       </div>
