@@ -31,7 +31,7 @@
           <p class="mb-1">
             A personal, aggregate news viewer with a focus on minimalism and simple design. 
           </p>
-          <a href="https://xnews.netlify.com">Demo</a> | <a href="https://github.com/jpoechill/vuefrontendrtalk_demo">Github</a>
+          <a href="https://algos.me">Demo</a> | <a href="https://github.com/jpoechill/vuefrontendrtalk_demo">Github</a>
         </div>
         <div class="col-md-6 pb-4">
           <span class="font-weight-bold text-light">

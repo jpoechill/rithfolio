@@ -33,10 +33,33 @@
 
     <div class="w-100 py-4">
       <div class="container">
+        <!-- <div class="row">
+          <div class="col-md-12 overflow-hidden">
+            <div class="ticker-wrap">
+              <div class="ticker">
+                <div class="ticker__item">
+                  <span class="col-md-3 mb-3" v-for="(stock, index) in prices" :key="index">
+                    <img :src="stock.img" :alt="stock.name" class="mb-1 mr-2" style="height: 24px;"> ${{ numberWithCommas(stock.price) }} 
+                    (<span v-if="stock.change >= 0" class="text-success">+{{ stock.change }}%</span><span v-if="stock.change < 0" class="text-danger">{{ stock.change }}% </span>)
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> -->
         <div class="row text-center">
-          <div class="col-md-12">
-            <!-- dream deeply ~ <br><br> -->
-            <!-- Rithfolio.com © 2020 -->
+          <div class="col-md-3 mb-3" v-for="(stock, index) in prices" :key="index">
+            <img :src="stock.img" :alt="stock.name" class="mb-1 mr-2" style="height: 24px;"> ${{ numberWithCommas(stock.price) }} 
+            (<span v-if="stock.change >= 0" class="text-success">+{{ stock.change }}%</span><span v-if="stock.change < 0" class="text-danger">{{ stock.change }}% </span>)
+          </div>
+        </div>
+        <div class="row text-center">
+          <div class="col-md-12 mt-1">
+            <em>
+              <small class="text-muted">
+                Proudly made with <a href="https://github.com/vuejs/vue" target="_blank" class="vue-link">Vue.js</a>. © 2020
+              </small>
+            </em>
           </div>
         </div>
       </div>
@@ -45,9 +68,83 @@
 </template>
 
 <script>
+  import axios from 'Axios'
+
   export default {
     data () {
       return {
+        prices: [
+          {
+            name: 'Apple',
+            ticker: 'AAPL',
+            change: 0,
+            img: '/stocks/apple.png',
+            price: 0,
+          },
+          {
+            name: 'Facebook',
+            ticker: 'FB',
+            change: 0,
+            img: '/stocks/facebook.png',
+            price: 0,
+          },
+          {
+            name: 'Google',
+            ticker: 'GOOG',
+            change: 0,
+            img: '/stocks/google.png',
+            price: 0,
+          },
+          {
+            name: 'Netflix',
+            ticker: 'NFLX',
+            change: 0,
+            img: '/stocks/netflix.png',
+            price: 0,
+          },
+          // {
+          //   name: 'Microsoft',
+          //   ticker: 'MSFT',
+          //   change: 0,
+          //   img: '',
+          //   price: 0,
+          // },
+          // {
+          //   name: 'Snapchat',
+          //   ticker: 'SNAP',
+          //   change: 0,
+          //   img: '/stocks/netflix.png',
+          //   price: 0,
+          // },
+          // {
+          //   name: 'Amazon',
+          //   ticker: 'AMZN',
+          //   change: 0,
+          //   img: '/stocks/netflix.png',
+          //   price: 0,
+          // },
+          // {
+          //   name: 'Shopify',
+          //   ticker: 'SHOP',
+          //   change: 0,
+          //   img: '/stocks/netflix.png',
+          //   price: 0,
+          // },
+          // {
+          //   name: 'Tesla',
+          //   ticker: 'TSLA',
+          //   change: 0,
+          //   img: '/stocks/netflix.png',
+          //   price: 0,
+          // },
+          // {
+          //   name: 'Pinterest',
+          //   ticker: 'PINS',
+          //   change: 0,
+          //   img: '/stocks/netflix.png',
+          //   price: 0,
+          // },
+        ],
         links: [
           {
             active: false,
@@ -84,7 +181,25 @@
     created() {
       this.checkLinks()
     },
+    mounted() {
+
+      this.prices.forEach((stock) => {
+        axios.get('https://cloud.iexapis.com/stable/stock/' + stock.ticker + '/quote?token=pk_d8826aae332a4b1287b1d4399e2f860b')
+        .then(function (response) { 
+          // console.log(i + ': ' + response.data.high)
+
+          stock.price = response.data.latestPrice
+          stock.change = Math.floor(response.data.changePercent * 100) / 100
+          })
+        .catch(function (error) {
+          console.log(error);
+        })
+      })
+    },
     methods: {
+      numberWithCommas: function(x) {
+        return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+      },
       checkLinks: function () {
         let self = this
 
@@ -121,6 +236,10 @@ body, html {
 body {
   color: #333;
   background-color: #f7f7f7!important;
+}
+
+.vue-link {
+  color: teal;
 }
 
 .custom-gradient {
@@ -180,6 +299,62 @@ body {
   text-decoration: none !important
 }
 
+@-webkit-keyframes ticker {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    visibility: visible;
+  }
+  100% {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+@keyframes ticker {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    visibility: visible;
+  }
+  100% {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+
+.ticker-wrap {
+  /* position: fixed; */
+  /* bottom: 0; */
+  width: 100%;
+  overflow: hidden;
+  /* height: 4rem; */
+  /* background-color: rgba(0, 0, 0, 0.9); */
+  padding-left: 100%;
+  box-sizing: content-box;
+}
+
+.ticker-wrap .ticker {
+  display: inline-block;
+  height: 4rem;
+  line-height: 4rem;
+  white-space: nowrap;
+  padding-right: 100%;
+  box-sizing: content-box;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-name: ticker;
+  animation-name: ticker;
+  -webkit-animation-duration: 30s;
+  animation-duration: 30s;
+}
+.ticker-wrap .ticker__item {
+  display: inline-block;
+  padding: 0 2rem;
+  /* font-size: 2rem; */
+  /* color: white; */
+}
 @media only screen and (max-width: 600px) {
   .text-responsive {
     text-align: center!important;
