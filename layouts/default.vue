@@ -57,7 +57,7 @@
           <div class="col-md-12 mt-1">
             <em>
               <small class="text-muted">
-                Proudly made with <a href="https://github.com/vuejs/vue" target="_blank" class="vue-link">Vue.js</a>. © 2020
+                Proudly made with <a href="https://github.com/vuejs/vue" target="_blank" class="vue-link">Vue.js</a>.
               </small>
             </em>
           </div>
