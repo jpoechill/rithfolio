@@ -15,7 +15,7 @@
               <nuxt-link to="/working">Po Rith</nuxt-link>
             </span> | 
             <span>
-              Design x JavaScript (Vue.js)
+              JavaScript x Design
             </span>
         </div>
         <div class="col-md-5 py-3 px-3">

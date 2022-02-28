@@ -9,7 +9,7 @@
         </div>
         <div class="offset-md-1 col-md-6">
           <p class="">
-            Greetings! <br><br> I'm Po, a frontend developer with a background in design. <br>
+            Greetings! <br><br> I'm Po, a frontend developer with a former background in design. <br>
           </p>
           <p>
             I most enjoy building front-end applications with JavaScript, utilizing Vue.js as my framework of choice. <br><br>
@@ -80,18 +80,17 @@
     
     </div>
 
-    <div class="border-top">
-
-<div class="container">
-      <div class="row pt-5">
-        <div class="col-md-12 pb-5 text-center mt-5 pb-5">
-          <!-- <hr class="pt-5 pb-1 my-5"> -->
-          I fear not the man who has practiced 10,000 kicks once, but I fear the man who has practiced one kick 10,000 times.
-          <br>
-          – Bruce Lee
+    <div class="custom-bg">
+      <div class="container" style="opacity: 1!important;">
+        <div class="row py-5">
+          <div class="col-md-12 pb-5 text-center text-dark mt-5 pb-5">
+            <!-- <hr class="pt-5 pb-1 my-5"> -->
+            I fear not the man who has practiced 10,000 kicks once, but I fear the man who has practiced one kick 10,000 times.
+            <br>
+            – Bruce Lee
+          </div>
         </div>
       </div>
-    </div>
     </div>
     
   </div>
@@ -148,4 +147,11 @@ export default {
   -webkit-box-shadow: 5px 6px 14px 2px rgba(0,0,0,0.25); 
   box-shadow: 5px 6px 14px 2px rgba(0,0,0,0.1);
 }
+
+.custom-bg {
+  background-color: #b7b7b70f;
+  background-image: linear-gradient(135deg, #ffffff 25%, transparent 25%), linear-gradient(225deg, #ffffff 25%, transparent 25%), linear-gradient(45deg, #ffffff 25%, transparent 25%), linear-gradient(315deg, #ffffff 25%, rgb(183 183 183 / 0%) 25%);
+  background-position:  40px 0, 40px 0, 0 0, 0 0;
+  background-size: 80px 80px;
+  background-repeat: repeat;}
 </style>
