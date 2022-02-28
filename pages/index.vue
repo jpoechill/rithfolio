@@ -18,7 +18,7 @@
             <br>
             <!-- <span class="text-muted">
               <small><em>
-                Hashtags: #Design, #Javascript, #Vue.js, #HTML/CSS, #Algorithms, #Git
+                Hashtags: #Algorithms, #Design, #Javascript, #Vue.js, #HTML/CSS, #Git
               </em></small>
             </span> -->
           </p>
