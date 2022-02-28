@@ -1,33 +1,41 @@
 <template>
   <div>
-    <div class="w-100 custom-gradient">
+    <div class="w-100 custom-gradient border-bottom">
       <div class="container">
         <div class="row">
           <div class="col-md-12 py-3"></div>
         </div>
       </div>
     </div>
-    <div class="w-100 pb-3" style="background-color: #F7F7F7;">
+    <div class="w-100 pb-0  sticky-top border-bottom" style="background-color: #FFF;">
     <div class="container">
-      <div class="row pt-4">
-        <div class="col-md-4 pb-2 text-responsive">
+      <div class="row  sticky-top">
+        <div class="col-md-5 bg-white py-3 border-left border-right text-center px-4">
             <span class="font-weight-bold">
               <nuxt-link to="/working">Po Rith</nuxt-link>
             </span> | 
             <span>
-              Design x Javascript (Vue.js)
+              Design x JavaScript (Vue.js)
             </span>
         </div>
-        <div class="col-md-8 text-right text-responsive">
-          <span class="pr-3">
+        <div class="col-md-5 py-3 px-3">
+          <img src="/squiggle.svg" class="w-100" alt="">
+        </div>
+        <div class="col-md-2 bg-white py-3 border-left border-right text-center px-4">
+            <span class="font-weight-bold">
+              <nuxt-link to="/working">CV</nuxt-link>
+            </span>
+        </div>
+        <!-- <div class="col-md-8 bg-dark text-right">
+          <span class="bg-light px-5 py-3">
             <nuxt-link to="/">
             CV
             </nuxt-link>
           </span>
-          <!-- <span class="pr-3" v-for="(link, index) in links" :key="index">
+          <span class="pr-3" v-for="(link, index) in links" :key="index">
             <nuxt-link :to="link.url" class="nounderline text-nowrap" :class="{ active: link.active }">{{ link.title }}</nuxt-link>
-          </span> -->
-        </div>
+          </span>
+        </div> -->
       </div>
     </div>
     </div>
@@ -36,7 +44,7 @@
       <nuxt/>
     </div>
 
-    <div class="w-100 py-4">
+    <div class="w-100 py-4 bg-white border-top">
       <div class="container">
         <!-- <div class="row">
           <div class="col-md-12 overflow-hidden">
@@ -243,6 +251,7 @@
 body, html {
   font-size: 16px;
   height: 100%;
+  /* font-family: Arial, Helvetica, sans-serif; */
 }
 
 body {
@@ -372,4 +381,6 @@ body {
     text-align: center!important;
   }
 }
+
+
 </style>

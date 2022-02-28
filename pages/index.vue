@@ -3,9 +3,9 @@
 
 
     <div class="container pt-5">
-      <div class="row pt-3 mt-4">
+      <div class="row pt-0 mt-3 mb-5">
         <div class="offset-md-1 col-md-3">
-          <img src="/avatar_22.jpg" class="w-100" style="border-radius: 500px;" alt="">
+          <img src="/avatar_22.jpg" class="w-100 border" style="border-radius: 500px;" alt="">
         </div>
         <div class="offset-md-1 col-md-6">
           <p class="">
@@ -32,163 +32,98 @@
           </p> -->
 
         </div>
-        <div class="col-md-12 pt-5 mt-3">
+        <!-- <div class="col-md-12 pt-5 mt-3">
           <hr>
-        </div>
+        </div> -->
       </div>
-      <div class="row pt-3 mt-4 pb-4">
+    </div>
+
+    <div class="border-top" style="background-color: #fdfdfd;">
+    <div class="container pt-4 mt-3 pb-5">
+      <div class="row pt-0 my-1 pb-0">
         <div class="col-md-12 text-center">
-          Recent Projects
+          <h5 class="pb-0 mb-0 text-muted">
+            Recent Projects
+          </h5>
         </div>
       </div>
-      <div class="row mt-3">
-        <div class="col-md-6 pb-5">
-          <div class="w-100 mb-1 position-relative fixed-ratio">
-            <div class="position-absolute">
-              <img src="/browser-04.png" class="w-100" alt="">
-            </div>
-          </div>
-          <div class="pl-3 py-2">
-            <span class="font-weight-bold text-light">
-              PPCS Restore
-            </span><br>
-            <p class="mb-1">
-              PPCS Restore is a national, family-run, commercial building restoration company based in the Bay Area.
-            </p>
-            <a href="https://ppc-restore.com">Live Site</a> | <a href="https://github.com/jpoechill/ppcs">Github</a>
-          </div>          
-        </div>
 
-
-        <div class="col-md-6 pb-5">
-          <div class="w-100 mb-1 position-relative fixed-ratio">
-            <div class="position-absolute">
-              <img src="/browser-05.jpg" class="w-100" alt="">
+      <div class="row mt-0 pb-5">
+        <div class="col-md-6" v-for="(project, index) in projects" :key="index">
+          <div class="px-4 mt-5 mb-2">
+            <div class="bg-white pb-1 box-shadow" style="border-radius: 10px; overflow: hidden; border: 1px solid #ddd;">
+              <div class="w-100">
+                <div class="">
+                  <img :src="project.img" class="w-100" alt="">
+                </div>
+                <div class="pt-4 pb-2 px-5">
+                  <span class="font-weight-bold font-size-lg text-light mb-3 d-block">
+                    <h4>
+                      {{ project.title }}
+                    </h4>  
+                  </span>
+                  <p class="mb-4 text-muted">
+                    {{ project.description }}
+                  </p>
+                  <p class="mt-3 pb-0 text-right">
+                    <a href="https://mellanacafe.com">Live Site</a> | 
+                    <a href="https://instagram.com/mellanacafe">Instagram</a>
+                  </p>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="pl-3">
-            <span class="font-weight-bold text-light">
-              Mellana Café
-            </span><br>
-            <p class="mb-1">
-              Mellana Café is a café located in South Berkeley/Northern Oakland, offering hand-made juices, gourmet sandwiches, and coffee.
-            </p>
-            <a href="https://mellanacafe.com">Live Site</a> | 
-            <a href="https://instagram.com/mellanacafe">Instagram</a>
           </div>
         </div>
-
-        <!-- <div class="col-md-6 pb-4">
-          <div class="w-100 mb-1 position-relative fixed-ratio">
-            <div class="position-absolute">
-              <img src="/browser-05.jpg" class="w-100" alt="">
-            </div>
-          </div>
-          <div class="pl-3 ">
-            <span class="font-weight-bold text-light">
-              Mellana Café
-            </span><br>
-            <p class="mb-1">
-              Mellana Café is a café located in South Berkeley/Northern Oakland, offering hand-made juices, gourmet sandwiches, and coffee.
-            </p>
-            <a href="https://mellanacafe.com">Live Site</a> | 
-            <a href="https://instagram.com/mellanacafe">Instagram</a>
-          </div>
-        </div>
-
-        <div class="col-md-6 pl-3">
-          <div class="w-100 mb-1 position-relative fixed-ratio">
-            <div class="position-absolute">
-              <img src="/browser-05.jpg" class="w-100" alt="">
-            </div>
-          </div>
-          <div class="pl-2">
-            <span class="font-weight-bold text-light">
-              Mellana Café
-            </span><br>
-            <p class="mb-1">
-              Mellana Café is a café located in South Berkeley/Northern Oakland, offering hand-made juices, gourmet sandwiches, and coffee.
-            </p>
-            <a href="https://mellanacafe.com">Live Site</a> | 
-            <a href="https://instagram.com/mellanacafe">Instagram</a>
-          </div>
-        </div> -->
-
-                <!-- <div class="col-md-4 pb-4">
-          <div class="w-100 mb-1 position-relative fixed-ratio">
-            <div class="position-absolute">
-              <img src="/browser-05.jpg" class="w-100" alt="">
-            </div>
-          </div>
-          <div class="pl-2">
-            <span class="font-weight-bold text-light">
-              Mellana Café
-            </span><br>
-            <p class="mb-1">
-              Mellana Café is a café located in South Berkeley/Northern Oakland, offering hand-made juices, gourmet sandwiches, and coffee.
-            </p>
-            <a href="https://mellanacafe.com">Homepage</a> | 
-            <a href="https://instagram.com/mellanacafe">Instagram</a>
-          </div>
-        </div>
-
-                <div class="col-md-4 pb-4">
-          <div class="w-100 mb-1 position-relative fixed-ratio">
-            <div class="position-absolute">
-              <img src="/browser-05.jpg" class="w-100" alt="">
-            </div>
-          </div>
-          <div class="pl-2">
-            <span class="font-weight-bold text-light">
-              Mellana Café
-            </span><br>
-            <p class="mb-1">
-              Mellana Café is a café located in South Berkeley/Northern Oakland, offering hand-made juices, gourmet sandwiches, and coffee.
-            </p>
-            <a href="https://mellanacafe.com">Homepage</a> | 
-            <a href="https://instagram.com/mellanacafe">Instagram</a>
-          </div>
-        </div>
-
-                <div class="col-md-4 pb-4">
-          <div class="w-100 mb-1 position-relative fixed-ratio">
-            <div class="position-absolute">
-              <img src="/browser-05.jpg" class="w-100" alt="">
-            </div>
-          </div>
-          <div class="pl-2">
-            <span class="font-weight-bold text-light">
-              Mellana Café
-            </span><br>
-            <p class="mb-1">
-              Mellana Café is a café located in South Berkeley/Northern Oakland, offering hand-made juices, gourmet sandwiches, and coffee.
-            </p>
-            <a href="https://mellanacafe.com">Homepage</a> | 
-            <a href="https://instagram.com/mellanacafe">Instagram</a>
-          </div>
-        </div> -->
-
 
       </div>
+    </div>
+    
+    </div>
 
+    <div class="border-top">
 
-      <div class="row">
-        <div class="col-md-12 pb-5 text-center">
-          <hr class="pt-5 my-5">
+<div class="container">
+      <div class="row pt-5">
+        <div class="col-md-12 pb-5 text-center mt-5 pb-5">
+          <!-- <hr class="pt-5 pb-1 my-5"> -->
           I fear not the man who has practiced 10,000 kicks once, but I fear the man who has practiced one kick 10,000 times.
           <br>
           – Bruce Lee
         </div>
       </div>
     </div>
-
+    </div>
+    
   </div>
 </template>
 
 <script>
 export default {
   data() {
-    return {}
+    return {
+      projects: [
+        // {
+        //   title: 'Product Feedback App',
+        //   description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, architecto!',
+        //   img: '/browser-07.jpg'
+        // },
+        // {
+        //   title: 'Invoice App',
+        //   description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, architecto!',
+        //   img: '/browser-06.jpg'
+        // },
+        {
+          title: 'Multi Page Marketing Website',
+          description: 'PPCS Restore is a national, family-run, commercial building restoration company based in the Bay Area.',
+          img: '/browser-04.jpg'
+        },
+        {
+          title: 'Squarespace Marketing Website',
+          description: 'Mellana Café is a cafe located in North Oakland, offering juices, sandwiches, and specialty coffee.',
+          img: '/browser-05.jpg'
+        },
+      ]
+    }
   },
   created() {
     // this.$router.push({
@@ -207,5 +142,10 @@ export default {
 .fixed-ratio {
   width: 100%;
   padding-bottom: 63.78%;
+}
+
+.box-shadow {
+  -webkit-box-shadow: 5px 6px 14px 2px rgba(0,0,0,0.25); 
+  box-shadow: 5px 6px 14px 2px rgba(0,0,0,0.1);
 }
 </style>
