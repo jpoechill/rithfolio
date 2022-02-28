@@ -40,7 +40,7 @@
     </div>
     </div>
 
-    <div class="w-100 pt-2 pb-5" style="background-color: #FFF;">
+    <div class="w-100 pt-2" style="background-color: #FFF;">
       <nuxt/>
     </div>
 

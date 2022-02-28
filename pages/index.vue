@@ -38,7 +38,7 @@
       </div>
     </div>
 
-    <div class="border-top" style="background-color: #fdfdfd;">
+    <div class="border-top custom-bg" style="background-color: #fdfdfd;">
     <div class="container pt-4 mt-3 pb-5">
       <div class="row pt-0 my-1 pb-0">
         <div class="col-md-12 text-center">
@@ -80,10 +80,10 @@
     
     </div>
 
-    <div class="custom-bg">
+    <div class="border-top">
       <div class="container" style="opacity: 1!important;">
         <div class="row py-5">
-          <div class="col-md-12 pb-5 text-center text-dark mt-5 pb-5">
+          <div class="col-md-12 pb-5 text-center text-dark pt-5">
             <!-- <hr class="pt-5 pb-1 my-5"> -->
             I fear not the man who has practiced 10,000 kicks once, but I fear the man who has practiced one kick 10,000 times.
             <br>
