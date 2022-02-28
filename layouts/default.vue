@@ -7,7 +7,7 @@
         </div>
       </div>
     </div>
-    <div class="w-100 pb-0  sticky-top border-bottom" style="background-color: #FFF;">
+    <div class="w-100 pb-0  sticky-top border-bottom" style="background-color: #FFF; box-shadow: 0 .5rem 1rem rgba(0,0,0,.01)!important;">
     <div class="container">
       <div class="row  sticky-top">
         <div class="col-md-5 bg-white py-3 border-left border-right text-center px-4">
