@@ -70,7 +70,7 @@
           <div class="col-md-6 py-2">
             <span class="text-muted">
               <small><em>
-                Hashtags: #JavaScript, #Design, #Algorithms, #Vue.js, #HTML/CSS, #Git
+                Hashtags: #Algorithms, #JavaScript, #Design, #Vue.js, #HTML/CSS, #Git
               </em></small>
             </span>
           </div>

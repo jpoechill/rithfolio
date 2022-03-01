@@ -9,11 +9,11 @@
         </div>
         <div class="offset-md-1 col-md-6">
           <p class="">
-            Greetings! <br><br> I'm Po, a frontend developer with a former background in design. <br>
+            Greetings! <br><br> I'm Po, and I specialize in building web applications with Vue.js. <br>
           </p>
           <p>
-            I most enjoy building front-end applications with JavaScript, utilizing Vue.js as my framework of choice. <br><br>
-            I've been practicing for a while now, and I have a great passion for what I do. 
+            I have a background in design, and have a passion making experiences look, feel and work great.
+            With this, I also enjoy learning new technologies and the challenge of experimenting with new trends. <br><br> 
             If you are interested in learning more about me, or my work, please feel free to get in touch!
             <br>
             <!-- <span class="text-muted">
@@ -53,8 +53,8 @@
           <div class="px-4 mt-5 mb-2">
             <div class="bg-white pb-1 box-shadow" style="border-radius: 10px; overflow: hidden; border: 1px solid #ddd;">
               <div class="w-100">
-                <div class="">
-                  <img :src="project.img" class="w-100" alt="">
+                <div class="w-100 overflow-hidden">
+                  <img :src="project.img" class="w-100 zoom" alt="">
                 </div>
                 <div class="pt-4 pb-2 px-5">
                   <span class="font-weight-bold font-size-lg text-light mb-3 d-block">
@@ -136,6 +136,15 @@ export default {
 <style scoped>
 .text-light {
   color: #333 !important;
+}
+
+.zoom {
+  transition: transform .5s ease;
+}
+
+.zoom:hover {
+  cursor: pointer;
+  transform: scale(1.04); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 
 .fixed-ratio {
