@@ -101,25 +101,25 @@ export default {
   data() {
     return {
       projects: [
-        // {
-        //   title: 'Product Feedback App',
-        //   description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, architecto!',
-        //   img: '/browser-07.jpg'
-        // },
-        // {
-        //   title: 'Invoice App',
-        //   description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, architecto!',
-        //   img: '/browser-06.jpg'
-        // },
+        {
+          title: 'Product Feedback App',
+          description: 'A fullstack application that accounts for adding, commenting and updating feature requests for products and teams.',
+          img: '/browser-12.png'
+        },
+        {
+          title: 'Invoice App',
+          description: 'A fullstack, invoice application for creating, updating and tracking invoices for entreprenuers and freelancers. In progress!',
+          img: '/browser-13.jpg'
+        },
         {
           title: 'Multi Page Marketing Website',
           description: 'PPCS Restore is a national, family-run, commercial building restoration company based in the Bay Area.',
-          img: '/browser-04.jpg'
+          img: '/browser-09.jpg'
         },
         {
           title: 'Squarespace Marketing Website',
           description: 'Mellana Café is a cafe located in North Oakland, offering juices, sandwiches, and specialty coffee.',
-          img: '/browser-05.jpg'
+          img: '/browser-11.jpg'
         },
       ]
     }
