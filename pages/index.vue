@@ -162,5 +162,7 @@ export default {
   background-image: linear-gradient(135deg, #ffffff 25%, transparent 25%), linear-gradient(225deg, #ffffff 25%, transparent 25%), linear-gradient(45deg, #ffffff 25%, transparent 25%), linear-gradient(315deg, #ffffff 25%, rgb(183 183 183 / 0%) 25%);
   background-position:  40px 0, 40px 0, 0 0, 0 0;
   background-size: 80px 80px;
-  background-repeat: repeat;}
+  background-repeat: repeat;
+}
+
 </style>
