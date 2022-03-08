@@ -12,7 +12,7 @@
       <div class="row  sticky-top">
         <div class="col-md-5 bg-white py-3 border-left border-right text-center px-4">
             <span class="font-weight-bold">
-              <nuxt-link to="/working">Po Rith</nuxt-link>
+              <nuxt-link to="/">Po Rith</nuxt-link>
             </span> | 
             <span>
               JavaScript x Design
@@ -23,7 +23,7 @@
         </div>
         <div class="col-md-2 bg-white py-3 border-left border-right text-center px-4">
             <span class="font-weight-bold">
-              <nuxt-link to="/working">CV</nuxt-link>
+              <nuxt-link to="/">CV</nuxt-link>
             </span>
         </div>
         <!-- <div class="col-md-8 bg-dark text-right">
