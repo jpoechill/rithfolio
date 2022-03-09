@@ -66,8 +66,10 @@
                     {{ project.description }}
                   </p>
                   <p class="mt-3 pb-0 text-right">
-                    <a href="https://mellanacafe.com">Live Site</a> | 
-                    <a href="https://instagram.com/mellanacafe">Instagram</a>
+                    <span v-for="(link, index) in project.links" :key="index">
+                      <a :href="link.url">{{ link.title }}</a>
+                      <span v-if="index !== project.links.length - 1"> | </span>
+                    </span>
                   </p>
                 </div>
               </div>
@@ -104,22 +106,62 @@ export default {
         {
           title: 'Product Feedback App',
           description: 'A fullstack application that accounts for adding, commenting and updating feature requests for products and teams.',
-          img: '/browser-12.png'
+          img: '/browser-12.png',
+          links: [
+            {
+              title: 'Github',
+              url: 'https://github.com/jpoechill/product-feedback-fem'
+            },
+            {
+              title: 'Live',
+              url: 'https://compassionate-hugle-3311b0.netlify.app/'
+            }
+          ]
         },
         {
           title: 'Invoice App',
           description: 'A fullstack, invoice application for creating, updating and tracking invoices for entreprenuers and freelancers. In progress!',
-          img: '/browser-13.jpg'
+          img: '/browser-13.jpg',
+          links: [
+            {
+              title: 'Github',
+              url: 'https://github.com/jpoechill/product-feedback-fem'
+            },
+            {
+              title: 'Live',
+              url: 'https://compassionate-hugle-3311b0.netlify.app/'
+            }
+          ]
         },
         {
           title: 'Multi Page Marketing Website',
           description: 'PPCS Restore is a national, family-run, commercial building restoration company based in the Bay Area.',
-          img: '/browser-09.jpg'
+          img: '/browser-09.jpg',
+          links: [
+            {
+              title: 'Github',
+              url: 'https://github.com/jpoechill/ppcs'
+            },
+            {
+              title: 'Live Site',
+              url: 'https://ppc-restore.com/'
+            }
+          ]
         },
         {
           title: 'Squarespace Marketing Website',
           description: 'Mellana Café is a cafe located in North Oakland, offering juices, sandwiches, and specialty coffee.',
-          img: '/browser-11.jpg'
+          img: '/browser-11.jpg',
+          links: [
+            {
+              title: 'Github',
+              url: 'https://github.com/jpoechill/product-feedback-fem'
+            },
+            {
+              title: 'Live Site',
+              url: 'https://mellanacafe.com'
+            }
+          ]
         },
       ]
     }
