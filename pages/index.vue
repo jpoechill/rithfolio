@@ -5,7 +5,7 @@
     <div class="container pt-5">
       <div class="row pt-0 mt-3 mb-5">
         <div class="offset-md-1 col-md-3">
-          <img src="/avatar_22.jpg" class="w-100 border" style="border-radius: 500px;" alt="">
+          <img src="/portrait_031122_sm.jpg" class="w-100 border" style="border-radius: 500px;" alt="">
         </div>
         <div class="offset-md-1 col-md-6">
           <p class="">
