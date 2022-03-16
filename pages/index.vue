@@ -2,12 +2,12 @@
   <div>
 
 
-    <div class="container pt-5">
+    <div class="container pt-md-4">
       <div class="row pt-0 mt-3 mb-5">
-        <div class="offset-md-1 col-md-3">
+        <div class="offset-md-1 col-md-3 p-5 p-md-0">
           <img src="/portrait_031122_sm.jpg" class="w-100 border" style="border-radius: 500px;" alt="">
         </div>
-        <div class="offset-md-1 col-md-6">
+        <div class="offset-md-1 col-md-6 px-5 p-md-0">
           <p class="">
             Greetings! <br><br> I'm Po, and I specialize in building web applications with Vue.js. <br>
           </p>
@@ -49,7 +49,7 @@
       </div>
 
       <div class="row mt-0 pb-5">
-        <div class="col-md-6" v-for="(project, index) in projects" :key="index">
+        <div class="col-md-6 h-100" v-for="(project, index) in projects" :key="index">
           <div class="px-4 mt-5 mb-2">
             <div class="bg-white pb-1 box-shadow" style="border-radius: 10px; overflow: hidden; border: 1px solid #ddd;">
               <div class="w-100">
