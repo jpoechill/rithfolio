@@ -131,7 +131,7 @@ export default {
           links: [
             {
               title: 'Github',
-              url: 'https://github.com/jpoechill/product-feedback-fem'
+              url: 'https://github.com/jpoechill/invoice-app'
             },
             {
               title: 'Demo',
