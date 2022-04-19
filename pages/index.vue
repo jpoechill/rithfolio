@@ -109,7 +109,7 @@ export default {
       projects: [
         {
           title: 'Product Feedback App',
-          description: 'A fullstack application that accounts for adding, commenting and updating feature requests for products and teams.',
+          description: 'A frontend, product feedback application that accounts for adding, commenting and updating feature requests for products and teams.',
           img: '/browser-12.png',
           url: 'https://compassionate-hugle-3311b0.netlify.app/',
           links: [
@@ -125,7 +125,7 @@ export default {
         },
         {
           title: 'Invoice App',
-          description: 'A fullstack, invoice application for creating, updating and tracking invoices for entreprenuers and freelancers. In progress!',
+          description: 'A frontend, invoice application for creating, updating and tracking invoices for entreprenuers and freelancers.',
           img: '/browser-13.jpg',
           url: 'https://sweet-muffin-869709.netlify.app/',
           links: [
