@@ -8,36 +8,59 @@
       </div>
     </div>
     <div class="w-100 pb-0  sticky-top border-bottom" style="background-color: #FFF; box-shadow: 0 .5rem 1rem rgba(0,0,0,.01)!important;">
-    <div class="container">
-      <div class="row  sticky-top">
-        <div class="col-md-5 bg-white py-3 border-left border-right text-center px-4">
-            <span class="font-weight-bold">
-              <nuxt-link to="/">Po Rith</nuxt-link>
-            </span> | 
-            <span>
-              JavaScript x Design
-            </span>
+      <!-- Mobile -->
+      <div class="container d-md-none">
+        <div class="row sticky-top">
+          <div class="col-md-12 bg-white py-0 border-left border-right text-center px-4">
+              <div class="d-flex justify-content-between">
+                <div class="border-right py-3 pr-3">
+                  <span class="font-weight-bold">
+                    <nuxt-link to="/">Po Rith</nuxt-link>
+                  </span> | 
+                  <span>
+                    JavaScript x Design
+                  </span>
+                </div>
+                <div class="py-3" style="width: 44%;">
+                  <img src="/squiggle.svg" class="w-100" alt="">
+                </div>
+                <span class="font-weight-bold pl-3 py-3 border-left">
+                  <nuxt-link to="/">CV</nuxt-link>
+                </span>
+              </div>
+          </div>
+          <!-- <div class="col-md-5 py-3 px-3">
+            <img src="/squiggle.svg" class="w-100" alt="">
+          </div> -->
+          <!-- <div class="col-md-2 bg-white py-3 border-left border-right text-center px-4">
+              <span class="font-weight-bold">
+                <nuxt-link to="/">CV</nuxt-link>
+              </span>
+          </div> -->
         </div>
-        <div class="col-md-5 py-3 px-3">
-          <img src="/squiggle.svg" class="w-100" alt="">
-        </div>
-        <div class="col-md-2 bg-white py-3 border-left border-right text-center px-4">
-            <span class="font-weight-bold">
-              <nuxt-link to="/">CV</nuxt-link>
-            </span>
-        </div>
-        <!-- <div class="col-md-8 bg-dark text-right">
-          <span class="bg-light px-5 py-3">
-            <nuxt-link to="/">
-            CV
-            </nuxt-link>
-          </span>
-          <span class="pr-3" v-for="(link, index) in links" :key="index">
-            <nuxt-link :to="link.url" class="nounderline text-nowrap" :class="{ active: link.active }">{{ link.title }}</nuxt-link>
-          </span>
-        </div> -->
       </div>
-    </div>
+
+      <!-- Desktop -->
+      <div class="container d-none d-md-block">
+        <div class="row sticky-top">
+          <div class="col-md-5 bg-white py-3 border-left border-right text-center px-4">
+              <span class="font-weight-bold">
+                <nuxt-link to="/">Po Rith</nuxt-link>
+              </span> | 
+              <span>
+                JavaScript x Design
+              </span>
+          </div>
+          <div class="col-md-5 py-3 px-3">
+            <img src="/squiggle.svg" class="w-100" alt="">
+          </div><a href=""></a>
+          <div class="col-md-2 bg-white py-3 border-left border-right text-center px-4">
+              <span class="font-weight-bold">
+                <a href="/prith_resume_041922.pdf" target="new">CV</a>
+              </span>
+          </div>
+        </div>
+      </div>
     </div>
 
     <div class="w-100 pt-2" style="background-color: #FFF;">
@@ -66,20 +89,36 @@
             (<span v-if="stock.change >= 0" class="text-success">+{{ stock.change }}%</span><span v-if="stock.change < 0" class="text-danger">{{ stock.change }}% </span>)
           </div>
         </div> -->
-        <div class="row">
+
+        <!-- Mobile -->
+        <div class="row text-center d-md-none">
           <div class="col-md-6 py-2">
             <span class="text-muted">
               <small><em>
                 Hashtags: #Algorithms, #JavaScript, #Design, #Vue.js, #HTML/CSS, #Git
-              </em></small>
+              </em></small><br>
+              <small class="text-muted mt-2 d-block">
+                  Proudly made with <a href="https://github.com/vuejs/vue" target="_blank" class="vue-link">Vue.js</a>. © 2022
+              </small>
             </span>
           </div>
-          <div class="col-md-6 text-right py-2">
-            <!-- <em> -->
+        </div>
+
+        <!-- Desktop -->
+        <div class="d-none d-md-block">
+          <div class="row">
+            <div class="col-md-6 py-2">
+              <span class="text-muted">
+                <small><em>
+                  Hashtags: #Algorithms, #JavaScript, #Design, #Vue.js, #HTML/CSS, #Git
+                </em></small>
+              </span>
+            </div>
+            <div class="col-md-6 text-right py-2">
               <small class="text-muted">
-                 Proudly made with <a href="https://github.com/vuejs/vue" target="_blank" class="vue-link">Vue.js</a>. © 2022
+                  Proudly made with <a href="https://github.com/vuejs/vue" target="_blank" class="vue-link">Vue.js</a>. © 2022
               </small>
-            <!-- </em> -->
+            </div>
           </div>
         </div>
       </div>

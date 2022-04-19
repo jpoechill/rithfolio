@@ -4,8 +4,10 @@
 
     <div class="container pt-md-4">
       <div class="row pt-0 mt-3 mb-5">
-        <div class="offset-md-1 col-md-3 p-5 p-md-0">
-          <img src="/portrait_031122_sm.jpg" class="w-100 border" style="border-radius: 500px;" alt="">
+        <div class="offset-md-1 col-md-3 pb-5 p-md-0">
+          <div class=" px-5 px-md-0">
+            <img src="/portrait_031122_sm.jpg" class="w-100 border" style="border-radius: 500px;" alt="">
+          </div>
         </div>
         <div class="offset-md-1 col-md-6 px-5 p-md-0">
           <p class="">
@@ -23,7 +25,7 @@
             </span> -->
           </p>
           <p class="text-right pt-2">
-            Email, Github, LinkedIn
+            <a href="mailto: heys@rithfolio.com">Email</a>, <a href="https://github.com/jpoechill" target="new">Github</a>, <a href="https://linkedin.com/in/porith" target="new">LinkedIn</a>
           </p>
           <!-- <p style="color: #777;">
             <em>
@@ -54,7 +56,9 @@
             <div class="bg-white pb-1 box-shadow" style="border-radius: 10px; overflow: hidden; border: 1px solid #ddd;">
               <div class="w-100">
                 <div class="w-100 overflow-hidden">
-                  <img :src="project.img" class="w-100 zoom" alt="">
+                  <a :href="project.url" target="new">
+                    <img :src="project.img" class="w-100 zoom" alt="">
+                  </a>
                 </div>
                 <div class="pt-4 pb-2 px-5">
                   <span class="font-weight-bold font-size-lg text-light mb-3 d-block">
@@ -85,9 +89,9 @@
     <div class="border-top">
       <div class="container" style="opacity: 1!important;">
         <div class="row py-5">
-          <div class="col-md-12 pb-5 text-center text-dark pt-5">
+          <div class="col-md-12 pb-5 px-5 text-center text-dark pt-5">
             <!-- <hr class="pt-5 pb-1 my-5"> -->
-            I fear not the man who has practiced 10,000 kicks once, but I fear the man who has practiced one kick 10,000 times.
+            "I fear not the man who has practiced 10,000 kicks once, but I fear the man who has practiced one kick 10,000 times."
             <br>
             – Bruce Lee
           </div>
@@ -107,13 +111,14 @@ export default {
           title: 'Product Feedback App',
           description: 'A fullstack application that accounts for adding, commenting and updating feature requests for products and teams.',
           img: '/browser-12.png',
+          url: 'https://compassionate-hugle-3311b0.netlify.app/',
           links: [
             {
               title: 'Github',
               url: 'https://github.com/jpoechill/product-feedback-fem'
             },
             {
-              title: 'Live',
+              title: 'Demo',
               url: 'https://compassionate-hugle-3311b0.netlify.app/'
             }
           ]
@@ -122,14 +127,15 @@ export default {
           title: 'Invoice App',
           description: 'A fullstack, invoice application for creating, updating and tracking invoices for entreprenuers and freelancers. In progress!',
           img: '/browser-13.jpg',
+          url: 'https://sweet-muffin-869709.netlify.app/',
           links: [
             {
               title: 'Github',
               url: 'https://github.com/jpoechill/product-feedback-fem'
             },
             {
-              title: 'Live',
-              url: 'https://compassionate-hugle-3311b0.netlify.app/'
+              title: 'Demo',
+              url: 'https://sweet-muffin-869709.netlify.app/'
             }
           ]
         },
@@ -137,6 +143,7 @@ export default {
           title: 'Multi Page Marketing Website',
           description: 'PPCS Restore is a national, family-run, commercial building restoration company based in the Bay Area.',
           img: '/browser-09.jpg',
+          url: 'https://ppc-restore.com/',
           links: [
             {
               title: 'Github',
@@ -152,11 +159,8 @@ export default {
           title: 'Squarespace Marketing Website',
           description: 'Mellana Café is a cafe located in North Oakland, offering juices, sandwiches, and specialty coffee.',
           img: '/browser-11.jpg',
+          url: 'https://mellanacafe.com',
           links: [
-            {
-              title: 'Github',
-              url: 'https://github.com/jpoechill/product-feedback-fem'
-            },
             {
               title: 'Live Site',
               url: 'https://mellanacafe.com'
