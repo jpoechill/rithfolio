@@ -14,7 +14,7 @@
             Greetings! <br><br> I'm Po, and I specialize in building web applications with Vue.js. <br>
           </p>
           <p>
-            I have a background in art/design, and have a passion making experiences look, feel and work great.
+            I have a background in art/design, and have a passion making digital experiences look, feel and work great.
             Along with technology, I also enjoy strange things like crossfit, training capoeira, and space-exploration video games. 🦾 🧘‍♂️ 🤓 <br><br> 
             If you are interested in learning more about me, or my work, please feel free to get in touch!
             <br>
