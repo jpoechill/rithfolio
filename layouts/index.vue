@@ -1,12 +1,15 @@
 <template>
   <div>
-
     <div class="container">
       <div class="row">
         <div class="col-md-6 pb-4">
           <div class="w-100 mb-1 position-relative fixed-ratio">
             <div class="position-absolute">
-              <img src="/browser-03.png" class="w-100" alt="">
+              <img
+                src="/browser-03.png"
+                class="w-100"
+                alt=""
+              >
             </div>
           </div>
           <div class="pl-2">
@@ -22,7 +25,11 @@
         <div class="col-md-6 pb-4">
           <div class="w-100 mb-1 position-relative fixed-ratio">
             <div class="position-absolute">
-              <img src="/browser-02.png" class="w-100" alt="">
+              <img
+                src="/browser-02.png"
+                class="w-100"
+                alt=""
+              >
             </div>
           </div>
           <div class="pl-2">
@@ -37,17 +44,16 @@
         </div>
       </div>
     </div>
-    
   </div>
 </template>
 
 <script>
 export default {
+  transition: 'fade',
   data() {
-    return {}
-  },
-  transition: 'fade'
-}
+    return {};
+  }
+};
 </script>
 
 <style scoped>

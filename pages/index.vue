@@ -1,12 +1,15 @@
 <template>
   <div>
-
-
     <div class="container pt-md-4">
       <div class="row pt-0 mt-3 mb-5">
         <div class="offset-md-1 col-md-3 pb-5 p-md-0">
           <div class=" px-5 px-md-0">
-            <img src="/IMG_1565.jpg" class="w-100 border" style="border-radius: 500px;" alt="">
+            <img
+              src="/IMG_1565.jpg"
+              class="w-100 border"
+              style="border-radius: 500px;"
+              alt=""
+            >
           </div>
         </div>
         <div class="offset-md-1 col-md-6 px-5 p-md-0">
@@ -25,14 +28,19 @@
             </span> -->
           </p>
           <p class="text-right pt-2">
-            <a href="mailto: heys@rithfolio.com">Email</a>, <a href="https://github.com/jpoechill" target="new">Github</a>, <a href="https://linkedin.com/in/porith" target="new">LinkedIn</a>
+            <a href="mailto: heys@rithfolio.com">Email</a>, <a
+              href="https://github.com/jpoechill"
+              target="new"
+            >Github</a>, <a
+              href="https://linkedin.com/in/porith"
+              target="new"
+            >LinkedIn</a>
           </p>
           <!-- <p style="color: #777;">
             <em>
               Keywords: Design, Prototyping, Javascript, Vue.js, HTML/CSS, Git
             </em>
           </p> -->
-
         </div>
         <!-- <div class="col-md-12 pt-5 mt-3">
           <hr>
@@ -40,54 +48,76 @@
       </div>
     </div>
 
-    <div class="border-top custom-bg" style="background-color: #fdfdfd;">
-    <div class="container pt-4 mt-3 pb-5">
-      <div class="row pt-0 my-1 pb-0">
-        <div class="col-md-12 text-center">
-          <h5 class="pb-0 mb-0 text-muted">
-            Recent Projects
-          </h5>
+    <div
+      class="border-top custom-bg"
+      style="background-color: #fdfdfd;"
+    >
+      <div class="container pt-4 mt-3 pb-5">
+        <div class="row pt-0 my-1 pb-0">
+          <div class="col-md-12 text-center">
+            <h5 class="pb-0 mb-0 text-muted">
+              Recent Projects
+            </h5>
+          </div>
         </div>
-      </div>
 
-      <div class="row mt-0 pb-5">
-        <div class="col-md-6 h-100" v-for="(project, index) in projects" :key="index">
-          <div class="px-4 mt-5 mb-2">
-            <div class="bg-white pb-1 box-shadow" style="border-radius: 10px; overflow: hidden; border: 1px solid #ddd;">
-              <div class="w-100">
-                <div class="w-100 overflow-hidden">
-                  <a :href="project.url" target="new">
-                    <img :src="project.img" class="w-100 zoom" alt="">
-                  </a>
-                </div>
-                <div class="pt-4 pb-2 px-5">
-                  <span class="font-weight-bold font-size-lg text-light mb-3 d-block">
-                    <h4>
-                      {{ project.title }}
-                    </h4>  
-                  </span>
-                  <p class="mb-4 text-muted">
-                    {{ project.description }}
-                  </p>
-                  <p class="mt-3 pb-0 text-right">
-                    <span v-for="(link, index) in project.links" :key="index">
-                      <a :href="link.url">{{ link.title }}</a>
-                      <span v-if="index !== project.links.length - 1"> | </span>
+        <div class="row mt-0 pb-5">
+          <div
+            v-for="(project, index) in projects"
+            :key="index"
+            class="col-md-6 h-100"
+          >
+            <div class="px-4 mt-5 mb-2">
+              <div
+                class="bg-white pb-1 box-shadow"
+                style="border-radius: 10px; overflow: hidden; border: 1px solid #ddd;"
+              >
+                <div class="w-100">
+                  <div class="w-100 overflow-hidden">
+                    <a
+                      :href="project.url"
+                      target="new"
+                    >
+                      <img
+                        :src="project.img"
+                        class="w-100 zoom"
+                        alt=""
+                      >
+                    </a>
+                  </div>
+                  <div class="pt-4 pb-2 px-5">
+                    <span class="font-weight-bold font-size-lg text-light mb-3 d-block">
+                      <h4>
+                        {{ project.title }}
+                      </h4>  
                     </span>
-                  </p>
+                    <p class="mb-4 text-muted">
+                      <span v-html="project.description" />
+                      <!-- {{ project.description }} -->
+                    </p>
+                    <p class="mt-3 pb-0 text-right">
+                      <span
+                        v-for="(link, index) in project.links"
+                        :key="index"
+                      >
+                        <a :href="link.url">{{ link.title }}</a>
+                        <span v-if="index !== project.links.length - 1"> | </span>
+                      </span>
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-
       </div>
-    </div>
-    
     </div>
 
     <div class="border-top">
-      <div class="container" style="opacity: 1!important;">
+      <div
+        class="container"
+        style="opacity: 1!important;"
+      >
         <div class="row py-5">
           <div class="col-md-12 pb-5 px-5 text-center text-dark pt-5">
             <!-- <hr class="pt-5 pb-1 my-5"> -->
@@ -98,15 +128,31 @@
         </div>
       </div>
     </div>
-    
   </div>
 </template>
 
 <script>
 export default {
+  transition: 'fade',
   data() {
     return {
       projects: [
+        {
+          title: 'Simple To Do App',
+          description: 'A frontend, to-do application made in Nuxt 3, featuring light and dark modes, along persistent data with GraphQL.',
+          img: '/todo_cover_rithfolio.png',
+          url: 'https://todo-gql.vercel.app/',
+          links: [
+            {
+              title: 'Github',
+              url: 'https://github.com/jpoechill/fem-todo-fullstack'
+            },
+            {
+              title: 'Demo',
+              url: 'https://todo-gql.vercel.app/'
+            }
+          ]
+        },
         {
           title: 'Product Feedback App',
           description: 'A frontend, product feedback application that accounts for adding, commenting and updating feature requests for products and teams.',
@@ -141,7 +187,7 @@ export default {
         },
         {
           title: 'Multi Page Marketing Website',
-          description: 'PPCS Restore is a national, family-run, commercial building restoration company based in the Bay Area.',
+          description: 'PPCS Restore is a national, family-run, commercial building restoration company based in the Bay Area. Made with Nuxt 3.',
           img: '/browser-09.jpg',
           url: 'https://ppc-restore.com/',
           links: [
@@ -155,28 +201,27 @@ export default {
             }
           ]
         },
-        {
-          title: 'Squarespace Marketing Website',
-          description: 'Mellana Café is a cafe located in North Oakland, offering juices, sandwiches, and specialty coffee.',
-          img: '/browser-11.jpg',
-          url: 'https://mellanacafe.com',
-          links: [
-            {
-              title: 'Live Site',
-              url: 'https://mellanacafe.com'
-            }
-          ]
-        },
+        // {
+        //   title: 'Squarespace Marketing Website',
+        //   description: 'Mellana Café is a cafe located in North Oakland, offering juices, sandwiches, and specialty coffee.',
+        //   img: '/browser-11.jpg',
+        //   url: 'https://mellanacafe.com',
+        //   links: [
+        //     {
+        //       title: 'Live Site',
+        //       url: 'https://mellanacafe.com'
+        //     }
+        //   ]
+        // },
       ]
-    }
+    };
   },
   created() {
     // this.$router.push({
     //     path: '/working'
     // })
-  },
-  transition: 'fade'
-}
+  }
+};
 </script>
 
 <style scoped>

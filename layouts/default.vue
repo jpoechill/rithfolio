@@ -3,31 +3,41 @@
     <div class="w-100 custom-gradient border-bottom">
       <div class="container">
         <div class="row">
-          <div class="col-md-12 py-3"></div>
+          <div class="col-md-12 py-3" />
         </div>
       </div>
     </div>
-    <div class="w-100 pb-0  sticky-top border-bottom" style="background-color: #FFF; box-shadow: 0 .5rem 1rem rgba(0,0,0,.01)!important;">
+    <div
+      class="w-100 pb-0  sticky-top border-bottom"
+      style="background-color: #FFF; box-shadow: 0 .5rem 1rem rgba(0,0,0,.01)!important;"
+    >
       <!-- Mobile -->
       <div class="container d-md-none">
         <div class="row sticky-top">
           <div class="col-md-12 bg-white py-0 border-left border-right text-center px-4">
-              <div class="d-flex justify-content-between">
-                <div class="border-right py-3 pr-3">
-                  <span class="font-weight-bold">
-                    <nuxt-link to="/">Po Rith</nuxt-link>
-                  </span> | 
-                  <span>
-                    JavaScript x Design
-                  </span>
-                </div>
-                <div class="py-3" style="width: 44%;">
-                  <img src="/squiggle.svg" class="w-100" alt="">
-                </div>
-                <span class="font-weight-bold pl-3 py-3 border-left">
-                  <nuxt-link to="/">CV</nuxt-link>
+            <div class="d-flex justify-content-between">
+              <div class="border-right py-3 pr-3">
+                <span class="font-weight-bold">
+                  <nuxt-link to="/">Po Rith</nuxt-link>
+                </span> | 
+                <span>
+                  Typescript x Design
                 </span>
               </div>
+              <div
+                class="py-3"
+                style="width: 44%;"
+              >
+                <img
+                  src="/squiggle.svg"
+                  class="w-100"
+                  alt=""
+                >
+              </div>
+              <span class="font-weight-bold pl-3 py-3 border-left">
+                <nuxt-link to="/">CV</nuxt-link>
+              </span>
+            </div>
           </div>
           <!-- <div class="col-md-5 py-3 px-3">
             <img src="/squiggle.svg" class="w-100" alt="">
@@ -44,27 +54,37 @@
       <div class="container d-none d-md-block">
         <div class="row sticky-top">
           <div class="col-md-5 bg-white py-3 border-left border-right text-center px-4">
-              <span class="font-weight-bold">
-                <nuxt-link to="/">Po Rith</nuxt-link>
-              </span> | 
-              <span>
-                JavaScript x Design
-              </span>
+            <span class="font-weight-bold">
+              <nuxt-link to="/">Po Rith</nuxt-link>
+            </span> | 
+            <span>
+              Typescript x Design
+            </span>
           </div>
           <div class="col-md-5 py-3 px-3">
-            <img src="/squiggle.svg" class="w-100" alt="">
-          </div><a href=""></a>
+            <img
+              src="/squiggle.svg"
+              class="w-100"
+              alt=""
+            >
+          </div><a href="" />
           <div class="col-md-2 bg-white py-3 border-left border-right text-center px-4">
-              <span class="font-weight-bold">
-                <a href="/prith_resume_041922.pdf" target="new">CV</a>
-              </span>
+            <span class="font-weight-bold">
+              <a
+                href="/prith_resume_041922.pdf"
+                target="new"
+              >CV</a>
+            </span>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="w-100 pt-2" style="background-color: #FFF;">
-      <nuxt/>
+    <div
+      class="w-100 pt-2"
+      style="background-color: #FFF;"
+    >
+      <nuxt />
     </div>
 
     <div class="w-100 py-4 bg-white border-top">
@@ -98,7 +118,11 @@
                 Hashtags: #Algorithms, #JavaScript, #Design, #Vue.js, #HTML/CSS, #Git
               </em></small><br>
               <small class="text-muted mt-2 d-block">
-                  Proudly made with <a href="https://github.com/vuejs/vue" target="_blank" class="vue-link">Vue.js</a>. © 2022
+                Proudly made with <a
+                  href="https://github.com/vuejs/vue"
+                  target="_blank"
+                  class="vue-link"
+                >Vue.js</a>. © 2022
               </small>
             </span>
           </div>
@@ -116,7 +140,11 @@
             </div>
             <div class="col-md-6 text-right py-2">
               <small class="text-muted">
-                  Proudly made with <a href="https://github.com/vuejs/vue" target="_blank" class="vue-link">Vue.js</a>. © 2022
+                Proudly made with <a
+                  href="https://github.com/vuejs/vue"
+                  target="_blank"
+                  class="vue-link"
+                >Vue.js</a>. © 2022
               </small>
             </div>
           </div>
@@ -127,163 +155,163 @@
 </template>
 
 <script>
-  import axios from 'Axios'
+import axios from 'Axios';
 
-  export default {
-    data () {
-      return {
-        prices: [
-          {
-            name: 'Apple',
-            ticker: 'AAPL',
-            change: 0,
-            img: '/stocks/apple.png',
-            price: 0,
-          },
-          {
-            name: 'Facebook',
-            ticker: 'FB',
-            change: 0,
-            img: '/stocks/facebook.png',
-            price: 0,
-          },
-          {
-            name: 'Google',
-            ticker: 'GOOG',
-            change: 0,
-            img: '/stocks/google.png',
-            price: 0,
-          },
-          {
-            name: 'Netflix',
-            ticker: 'NFLX',
-            change: 0,
-            img: '/stocks/netflix.png',
-            price: 0,
-          },
-          // {
-          //   name: 'Microsoft',
-          //   ticker: 'MSFT',
-          //   change: 0,
-          //   img: '',
-          //   price: 0,
-          // },
-          // {
-          //   name: 'Snapchat',
-          //   ticker: 'SNAP',
-          //   change: 0,
-          //   img: '/stocks/netflix.png',
-          //   price: 0,
-          // },
-          // {
-          //   name: 'Amazon',
-          //   ticker: 'AMZN',
-          //   change: 0,
-          //   img: '/stocks/netflix.png',
-          //   price: 0,
-          // },
-          // {
-          //   name: 'Shopify',
-          //   ticker: 'SHOP',
-          //   change: 0,
-          //   img: '/stocks/netflix.png',
-          //   price: 0,
-          // },
-          // {
-          //   name: 'Tesla',
-          //   ticker: 'TSLA',
-          //   change: 0,
-          //   img: '/stocks/netflix.png',
-          //   price: 0,
-          // },
-          // {
-          //   name: 'Pinterest',
-          //   ticker: 'PINS',
-          //   change: 0,
-          //   img: '/stocks/netflix.png',
-          //   price: 0,
-          // },
-        ],
-        links: [
-          {
-            active: false,
-            title: 'About',
-            url: '/about'
-          },
-          {
-            active: false,
-            title: 'Working Projects',
-            url: '/working'
-          },
-          {
-            active: false,
-            title: 'Personal Projects',
-            url: '/personal'
-          },
-          {
-            active: false,
-            title: 'Contact',
-            url: '/contact'
-          }
-        ],
-        title: 'Po Rith | Rithfolio.com'
-      }
-    },
-    head () {
-      return {
-        title: this.title,
-        meta: [
-          { hid: 'Po Rith | Rithfolio.com', name: 'Po Rith | Rithfolio.com', content: 'Po Rith is a designer and vue.js developer from Oakland, CA.' }
-        ]
-      }
-    },
-    created() {
-      this.checkLinks()
-    },
-    mounted() {
+export default {
+  transition: 'fade',
+  data () {
+    return {
+      prices: [
+        {
+          name: 'Apple',
+          ticker: 'AAPL',
+          change: 0,
+          img: '/stocks/apple.png',
+          price: 0,
+        },
+        {
+          name: 'Facebook',
+          ticker: 'FB',
+          change: 0,
+          img: '/stocks/facebook.png',
+          price: 0,
+        },
+        {
+          name: 'Google',
+          ticker: 'GOOG',
+          change: 0,
+          img: '/stocks/google.png',
+          price: 0,
+        },
+        {
+          name: 'Netflix',
+          ticker: 'NFLX',
+          change: 0,
+          img: '/stocks/netflix.png',
+          price: 0,
+        },
+        // {
+        //   name: 'Microsoft',
+        //   ticker: 'MSFT',
+        //   change: 0,
+        //   img: '',
+        //   price: 0,
+        // },
+        // {
+        //   name: 'Snapchat',
+        //   ticker: 'SNAP',
+        //   change: 0,
+        //   img: '/stocks/netflix.png',
+        //   price: 0,
+        // },
+        // {
+        //   name: 'Amazon',
+        //   ticker: 'AMZN',
+        //   change: 0,
+        //   img: '/stocks/netflix.png',
+        //   price: 0,
+        // },
+        // {
+        //   name: 'Shopify',
+        //   ticker: 'SHOP',
+        //   change: 0,
+        //   img: '/stocks/netflix.png',
+        //   price: 0,
+        // },
+        // {
+        //   name: 'Tesla',
+        //   ticker: 'TSLA',
+        //   change: 0,
+        //   img: '/stocks/netflix.png',
+        //   price: 0,
+        // },
+        // {
+        //   name: 'Pinterest',
+        //   ticker: 'PINS',
+        //   change: 0,
+        //   img: '/stocks/netflix.png',
+        //   price: 0,
+        // },
+      ],
+      links: [
+        {
+          active: false,
+          title: 'About',
+          url: '/about'
+        },
+        {
+          active: false,
+          title: 'Working Projects',
+          url: '/working'
+        },
+        {
+          active: false,
+          title: 'Personal Projects',
+          url: '/personal'
+        },
+        {
+          active: false,
+          title: 'Contact',
+          url: '/contact'
+        }
+      ],
+      title: 'Po Rith | Rithfolio.com'
+    };
+  },
+  head () {
+    return {
+      title: this.title,
+      meta: [
+        { hid: 'Po Rith | Rithfolio.com', name: 'Po Rith | Rithfolio.com', content: 'Po Rith is a designer and vue.js developer from Oakland, CA.' }
+      ]
+    };
+  },
+  watch:{
+    $route (){
+      this.checkLinks();
+    }
+  },
+  created() {
+    this.checkLinks();
+  },
+  mounted() {
 
-      this.prices.forEach((stock) => {
-        axios.get('https://cloud.iexapis.com/stable/stock/' + stock.ticker + '/quote?token=pk_d8826aae332a4b1287b1d4399e2f860b')
+    this.prices.forEach((stock) => {
+      axios.get('https://cloud.iexapis.com/stable/stock/' + stock.ticker + '/quote?token=pk_d8826aae332a4b1287b1d4399e2f860b')
         .then(function (response) { 
           // console.log(i + ': ' + response.data.high)
 
-          stock.price = response.data.latestPrice
-          stock.change = Math.floor(response.data.changePercent * 100) / 100
-          })
+          stock.price = response.data.latestPrice;
+          stock.change = Math.floor(response.data.changePercent * 100) / 100;
+        })
         .catch(function (error) {
           console.log(error);
-        })
-      })
+        });
+    });
+  },
+  methods: {
+    numberWithCommas: function(x) {
+      return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
     },
-    methods: {
-      numberWithCommas: function(x) {
-        return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-      },
-      checkLinks: function () {
-        let self = this
+    checkLinks: function () {
+      let self = this;
 
-        this.links = this.links.map(function (link) {
-          // update schema if page route matches link url
+      this.links = this.links.map(function (link) {
+        // update schema if page route matches link url
 
-          let currLink = link
+        let currLink = link;
 
-          if (self.$route.path.split('/')[1] === currLink.url.split('/')[1]) {
-            currLink.active = true
-          } else {
-            currLink.active = false
-          }
+        if (self.$route.path.split('/')[1] === currLink.url.split('/')[1]) {
+          currLink.active = true;
+        } else {
+          currLink.active = false;
+        }
 
-          return link
-        })
-      }
-    },
-    watch:{
-      $route (to, from){
-        this.checkLinks()
-      }
-    },
-    transition: 'fade'
+        return link;
+      });
+    }
   }
+};
 </script>
 
 <style>
