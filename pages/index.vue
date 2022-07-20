@@ -139,7 +139,7 @@ export default {
       projects: [
         {
           title: 'Simple To Do App',
-          description: 'A frontend, to-do application made in Nuxt 3, featuring light and dark modes, along persistent data with GraphQL.',
+          description: 'A frontend, to-do application featuring light and dark modes, along persistent data with GraphQL.',
           img: '/todo_cover_rithfolio.png',
           url: 'https://todo-gql.vercel.app/',
           links: [
@@ -155,7 +155,7 @@ export default {
         },
         {
           title: 'Product Feedback App',
-          description: 'A frontend, product feedback application that accounts for adding, commenting and updating feature requests for products and teams.',
+          description: 'A frontend, product feedback application that accounts for managing feature requests for products and teams.',
           img: '/browser-12.png',
           url: 'https://compassionate-hugle-3311b0.netlify.app/',
           links: [
