@@ -171,7 +171,7 @@ export default {
         },
         {
           title: 'Invoice App',
-          description: 'A frontend, invoice application for creating, updating and tracking invoices for entreprenuers and freelancers.',
+          description: 'A frontend, invoice application for managing and tracking invoices for entreprenuers and freelancers.',
           img: '/browser-13.jpg',
           url: 'https://sweet-muffin-869709.netlify.app/',
           links: [
@@ -187,7 +187,7 @@ export default {
         },
         {
           title: 'Multi Page Marketing Website',
-          description: 'PPCS Restore is a national, family-run, commercial building restoration company based in the Bay Area. Made with Nuxt 3.',
+          description: 'PPCS Restore is a national, family-run, commercial building restoration company based in the Bay Area.',
           img: '/browser-09.jpg',
           url: 'https://ppc-restore.com/',
           links: [
