@@ -15,7 +15,7 @@
     "nuxt": "^2.3.4"
   },
   "devDependencies": {
-    "axios": "^0.19.2",
+    "axios": "^0.21.2",
     "eslint": "^8.19.0",
     "eslint-plugin-vue": "^9.2.0",
     "nodemon": "^1.18.9"
