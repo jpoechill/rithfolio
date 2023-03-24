@@ -4,12 +4,7 @@
       <div class="row pt-0 mt-3 mb-5">
         <div class="offset-md-1 col-md-3 pb-5 p-md-0">
           <div class=" px-5 px-md-0">
-            <img
-              src="/IMG_1565.jpg"
-              class="w-100 border"
-              style="border-radius: 500px;"
-              alt=""
-            >
+            <img src="/avatar_032422.jpg" class="w-100 border" style="border-radius: 500px;" alt="">
           </div>
         </div>
         <div class="offset-md-1 col-md-6 px-5 p-md-0">
@@ -18,8 +13,9 @@
           </p>
           <p>
             I have a background in art/design, and have a passion making digital experiences look, feel and work great.
-            Along with technology, I also enjoy strange things like crossfit, training capoeira, and space-exploration video games. 🦾 🧘‍♂️ 🤓 <br><br> 
-            If you are interested in learning more about me, or my work, please feel free to get in touch!
+            Along with technology, I also enjoy strange things like crossfit and nerding out on sci-fi. 🦾 🧘‍♂️
+            🤓 <br><br>
+            If you are interested in learning more, please feel free to get in touch!
             <br>
             <!-- <span class="text-muted">
               <small><em>
@@ -29,12 +25,9 @@
           </p>
           <p class="text-right pt-2">
             <a href="mailto: heys@rithfolio.com">Email</a>, <a
-              href="https://github.com/jpoechill"
-              target="new"
-            >Github</a>, <a
-              href="https://linkedin.com/in/porith"
-              target="new"
-            >LinkedIn</a>
+              href="https://www.notion.so/posblog/Po-s-Technology-Blog-d5360cafbfb046d8957bf6b456a4e75d"
+              target="new">Blog</a>, <a href="https://github.com/jpoechill" target="new">Github</a>, <a
+              href="https://linkedin.com/in/porith" target="new">LinkedIn</a>
           </p>
           <!-- <p style="color: #777;">
             <em>
@@ -48,10 +41,7 @@
       </div>
     </div>
 
-    <div
-      class="border-top custom-bg"
-      style="background-color: #fdfdfd;"
-    >
+    <div class="border-top custom-bg" style="background-color: #fdfdfd;">
       <div class="container pt-4 mt-3 pb-5">
         <div class="row pt-0 my-1 pb-0">
           <div class="col-md-12 text-center">
@@ -62,44 +52,28 @@
         </div>
 
         <div class="row mt-0 pb-5">
-          <div
-            v-for="(project, index) in projects"
-            :key="index"
-            class="col-md-6 h-100"
-          >
+          <div v-for="(project, index) in projects" :key="index" class="col-md-6 h-100">
             <div class="px-4 mt-5 mb-2">
-              <div
-                class="bg-white pb-1 box-shadow"
-                style="border-radius: 10px; overflow: hidden; border: 1px solid #ddd;"
-              >
+              <div class="bg-white pb-1 box-shadow"
+                style="border-radius: 10px; overflow: hidden; border: 1px solid #ddd;">
                 <div class="w-100">
                   <div class="w-100 overflow-hidden">
-                    <a
-                      :href="project.url"
-                      target="new"
-                    >
-                      <img
-                        :src="project.img"
-                        class="w-100 zoom"
-                        alt=""
-                      >
+                    <a :href="project.url" target="new">
+                      <img :src="project.img" class="w-100 zoom" alt="">
                     </a>
                   </div>
                   <div class="pt-4 pb-2 px-5">
                     <span class="font-weight-bold font-size-lg text-light mb-3 d-block">
                       <h4>
                         {{ project.title }}
-                      </h4>  
+                      </h4>
                     </span>
                     <p class="mb-4 text-muted">
                       <span v-html="project.description" />
                       <!-- {{ project.description }} -->
                     </p>
                     <p class="mt-3 pb-0 text-right">
-                      <span
-                        v-for="(link, index) in project.links"
-                        :key="index"
-                      >
+                      <span v-for="(link, index) in project.links" :key="index">
                         <a :href="link.url">{{ link.title }}</a>
                         <span v-if="index !== project.links.length - 1"> | </span>
                       </span>
@@ -114,14 +88,12 @@
     </div>
 
     <div class="border-top">
-      <div
-        class="container"
-        style="opacity: 1!important;"
-      >
+      <div class="container" style="opacity: 1!important;">
         <div class="row py-5">
           <div class="col-md-12 pb-5 px-5 text-center text-dark pt-5">
             <!-- <hr class="pt-5 pb-1 my-5"> -->
-            "I fear not the man who has practiced 10,000 kicks once, but I fear the man who has practiced one kick 10,000 times."
+            "I fear not the man who has practiced 10,000 kicks once, but I fear the man who has practiced one kick 10,000
+            times."
             <br>
             – Bruce Lee
           </div>
@@ -235,7 +207,8 @@ export default {
 
 .zoom:hover {
   cursor: pointer;
-  transform: scale(1.04); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  transform: scale(1.04);
+  /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 
 .fixed-ratio {
@@ -244,16 +217,15 @@ export default {
 }
 
 .box-shadow {
-  -webkit-box-shadow: 5px 6px 14px 2px rgba(0,0,0,0.25); 
-  box-shadow: 5px 6px 14px 2px rgba(0,0,0,0.1);
+  -webkit-box-shadow: 5px 6px 14px 2px rgba(0, 0, 0, 0.25);
+  box-shadow: 5px 6px 14px 2px rgba(0, 0, 0, 0.1);
 }
 
 .custom-bg {
   background-color: #b7b7b70f;
   background-image: linear-gradient(135deg, #ffffff 25%, transparent 25%), linear-gradient(225deg, #ffffff 25%, transparent 25%), linear-gradient(45deg, #ffffff 25%, transparent 25%), linear-gradient(315deg, #ffffff 25%, rgb(183 183 183 / 0%) 25%);
-  background-position:  40px 0, 40px 0, 0 0, 0 0;
+  background-position: 40px 0, 40px 0, 0 0, 0 0;
   background-size: 80px 80px;
   background-repeat: repeat;
 }
-
 </style>
