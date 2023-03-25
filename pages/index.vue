@@ -4,7 +4,7 @@
       <div class="row pt-0 mt-3 mb-5">
         <div class="offset-md-1 col-md-3 pb-5 p-md-0">
           <div class=" px-5 px-md-0">
-            <img src="/avatar_032422.jpg" class="w-100 border" style="border-radius: 500px;" alt="">
+            <img src="/IMG_1565.jpg" class="w-100 border" style="border-radius: 500px;" alt="">
           </div>
         </div>
         <div class="offset-md-1 col-md-6 px-5 p-md-0">
