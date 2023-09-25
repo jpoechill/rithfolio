@@ -24,10 +24,8 @@
             </span> -->
           </p>
           <p class="text-right pt-2">
-            <a href="mailto: heys@rithfolio.com">Email</a>, <a
-              href="https://www.notion.so/posblog/Po-s-Technology-Blog-d5360cafbfb046d8957bf6b456a4e75d"
-              target="new">Blog</a>, <a href="https://github.com/jpoechill" target="new">Github</a>, <a
-              href="https://linkedin.com/in/porith" target="new">LinkedIn</a>
+            <a href="mailto: heys@rithfolio.com">Email</a>, <a href="https://github.com/jpoechill"
+              target="new">Github</a>, <a href="https://linkedin.com/in/porith" target="new">LinkedIn</a>
           </p>
           <!-- <p style="color: #777;">
             <em>
