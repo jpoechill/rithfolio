@@ -4,7 +4,7 @@
       <div class="row pt-0 mt-3 mb-5">
         <div class="offset-md-1 col-md-3 pb-5 p-md-0">
           <div class=" px-5 px-md-0">
-            <img src="/IMG_1565.jpg" class="w-100 border" style="border-radius: 500px;" alt="">
+            <img src="/self_2023.jpg" class="w-100 border" style="border-radius: 500px;" alt="">
           </div>
         </div>
         <div class="offset-md-1 col-md-6 px-5 p-md-0">
@@ -13,7 +13,7 @@
           </p>
           <p>
             I have a background in art/design, and have a passion making digital experiences look, feel and work great.
-            Along with technology, I also enjoy strange things like crossfit and nerding out on sci-fi. 🦾 🧘‍♂️
+            Along with technology, I also enjoy strange things like crossfit and nerding out on chess and sci-fi. 🦾 🧘‍♂️
             🤓 <br><br>
             If you are interested in learning more, please feel free to get in touch!
             <br>
