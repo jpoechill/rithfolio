@@ -7,10 +7,8 @@
         </div>
       </div>
     </div>
-    <div
-      class="w-100 pb-0  sticky-top border-bottom"
-      style="background-color: #FFF; box-shadow: 0 .5rem 1rem rgba(0,0,0,.01)!important;"
-    >
+    <div class="w-100 pb-0  sticky-top border-bottom"
+      style="background-color: #FFF; box-shadow: 0 .5rem 1rem rgba(0,0,0,.01)!important;">
       <!-- Mobile -->
       <div class="container d-md-none">
         <div class="row sticky-top">
@@ -19,20 +17,13 @@
               <div class="border-right py-3 pr-3">
                 <span class="font-weight-bold">
                   <nuxt-link to="/">Po Rith</nuxt-link>
-                </span> | 
+                </span> |
                 <span>
                   Typescript x Design
                 </span>
               </div>
-              <div
-                class="py-3"
-                style="width: 44%;"
-              >
-                <img
-                  src="/squiggle.svg"
-                  class="w-100"
-                  alt=""
-                >
+              <div class="py-3" style="width: 44%;">
+                <img src="/squiggle.svg" class="w-100" alt="">
               </div>
               <span class="font-weight-bold pl-3 py-3 border-left">
                 <nuxt-link to="/">CV</nuxt-link>
@@ -56,34 +47,24 @@
           <div class="col-md-5 bg-white py-3 border-left border-right text-center px-4">
             <span class="font-weight-bold">
               <nuxt-link to="/">Po Rith</nuxt-link>
-            </span> | 
+            </span> |
             <span>
               Typescript x Design
             </span>
           </div>
           <div class="col-md-5 py-3 px-3">
-            <img
-              src="/squiggle.svg"
-              class="w-100"
-              alt=""
-            >
+            <img src="/squiggle.svg" class="w-100" alt="">
           </div><a href="" />
           <div class="col-md-2 bg-white py-3 border-left border-right text-center px-4">
             <span class="font-weight-bold">
-              <a
-                href="/prith_resume_041922.pdf"
-                target="new"
-              >CV</a>
+              <a href="/prith_resume_041922.pdf" target="new">CV</a>
             </span>
           </div>
         </div>
       </div>
     </div>
 
-    <div
-      class="w-100 pt-2"
-      style="background-color: #FFF;"
-    >
+    <div class="w-100 pt-2" style="background-color: #FFF;">
       <nuxt />
     </div>
 
@@ -115,14 +96,11 @@
           <div class="col-md-6 py-2">
             <span class="text-muted">
               <small><em>
-                Hashtags: #Algorithms, #JavaScript, #Design, #Vue.js, #HTML/CSS, #Git
-              </em></small><br>
+                  Hashtags: #Algorithms, #JavaScript, #Design, #Vue.js, #HTML/CSS, #Git
+                </em></small><br>
               <small class="text-muted mt-2 d-block">
-                Proudly made with <a
-                  href="https://github.com/vuejs/vue"
-                  target="_blank"
-                  class="vue-link"
-                >Vue.js</a>. © 2022
+                Proudly made with <a href="https://github.com/vuejs/vue" target="_blank" class="vue-link">Vue.js</a>. ©
+                2023
               </small>
             </span>
           </div>
@@ -134,17 +112,14 @@
             <div class="col-md-6 py-2">
               <span class="text-muted">
                 <small><em>
-                  Hashtags: #Algorithms, #JavaScript, #Design, #Vue.js, #HTML/CSS, #Git
-                </em></small>
+                    Hashtags: #Algorithms, #JavaScript, #Design, #Vue.js, #HTML/CSS, #Git
+                  </em></small>
               </span>
             </div>
             <div class="col-md-6 text-right py-2">
               <small class="text-muted">
-                Proudly made with <a
-                  href="https://github.com/vuejs/vue"
-                  target="_blank"
-                  class="vue-link"
-                >Vue.js</a>. © 2022
+                Proudly made with <a href="https://github.com/vuejs/vue" target="_blank" class="vue-link">Vue.js</a>. ©
+                2023
               </small>
             </div>
           </div>
@@ -159,7 +134,7 @@ import axios from 'Axios';
 
 export default {
   transition: 'fade',
-  data () {
+  data() {
     return {
       prices: [
         {
@@ -258,7 +233,7 @@ export default {
       title: 'Po Rith | Rithfolio.com'
     };
   },
-  head () {
+  head() {
     return {
       title: this.title,
       meta: [
@@ -266,8 +241,8 @@ export default {
       ]
     };
   },
-  watch:{
-    $route (){
+  watch: {
+    $route() {
       this.checkLinks();
     }
   },
@@ -278,7 +253,7 @@ export default {
 
     this.prices.forEach((stock) => {
       axios.get('https://cloud.iexapis.com/stable/stock/' + stock.ticker + '/quote?token=pk_d8826aae332a4b1287b1d4399e2f860b')
-        .then(function (response) { 
+        .then(function (response) {
           // console.log(i + ': ' + response.data.high)
 
           stock.price = response.data.latestPrice;
@@ -290,7 +265,7 @@ export default {
     });
   },
   methods: {
-    numberWithCommas: function(x) {
+    numberWithCommas: function (x) {
       return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
     },
     checkLinks: function () {
@@ -315,7 +290,8 @@ export default {
 </script>
 
 <style>
-body, html {
+body,
+html {
   font-size: 16px;
   height: 100%;
   /* font-family: Arial, Helvetica, sans-serif; */
@@ -323,7 +299,7 @@ body, html {
 
 body {
   color: #333;
-  background-color: #f7f7f7!important;
+  background-color: #f7f7f7 !important;
 }
 
 .vue-link {
@@ -338,27 +314,59 @@ body {
   -moz-animation: AnimationName 120s ease infinite;
   animation: AnimationName 120s ease infinite;
 }
+
 @-webkit-keyframes AnimationName {
-    0%{background-position:0% 51%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 51%}
-}
-@-moz-keyframes AnimationName {
-    0%{background-position:0% 51%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 51%}
-}
-@keyframes AnimationName {
-    0%{background-position:0% 51%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 51%}
+  0% {
+    background-position: 0% 51%
+  }
+
+  50% {
+    background-position: 100% 50%
+  }
+
+  100% {
+    background-position: 0% 51%
+  }
 }
 
-.fade-enter-active, .fade-leave-active {
+@-moz-keyframes AnimationName {
+  0% {
+    background-position: 0% 51%
+  }
+
+  50% {
+    background-position: 100% 50%
+  }
+
+  100% {
+    background-position: 0% 51%
+  }
+}
+
+@keyframes AnimationName {
+  0% {
+    background-position: 0% 51%
+  }
+
+  50% {
+    background-position: 100% 50%
+  }
+
+  100% {
+    background-position: 0% 51%
+  }
+}
+
+.fade-enter-active,
+.fade-leave-active {
   transition: opacity .2s;
 }
 
-.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+.fade-enter,
+.fade-leave-to
+
+/* .fade-leave-active below version 2.1.8 */
+  {
   opacity: 0;
 }
 
@@ -393,17 +401,20 @@ body {
     transform: translate3d(0, 0, 0);
     visibility: visible;
   }
+
   100% {
     -webkit-transform: translate3d(-100%, 0, 0);
     transform: translate3d(-100%, 0, 0);
   }
 }
+
 @keyframes ticker {
   0% {
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
     visibility: visible;
   }
+
   100% {
     -webkit-transform: translate3d(-100%, 0, 0);
     transform: translate3d(-100%, 0, 0);
@@ -437,17 +448,17 @@ body {
   -webkit-animation-duration: 30s;
   animation-duration: 30s;
 }
+
 .ticker-wrap .ticker__item {
   display: inline-block;
   padding: 0 2rem;
   /* font-size: 2rem; */
   /* color: white; */
 }
+
 @media only screen and (max-width: 600px) {
   .text-responsive {
-    text-align: center!important;
+    text-align: center !important;
   }
 }
-
-
 </style>

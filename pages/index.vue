@@ -3,39 +3,29 @@
     <div class="container pt-md-4">
       <div class="row pt-0 mt-3 mb-5">
         <div class="offset-md-1 col-md-3 pb-5 p-md-0">
-          <div class=" px-5 px-md-0">
-            <img src="/self_2023.jpg" class="w-100 border" style="border-radius: 500px;" alt="">
+          <div class="px-5 px-md-0">
+            <img src="/self_2023.jpg" class="w-100 border" style="border-radius: 500px;" alt="avatar">
           </div>
         </div>
         <div class="offset-md-1 col-md-6 px-5 p-md-0">
           <p class="">
-            Greetings! <br><br> I'm Po, and I specialize in building web applications with Vue.js. <br>
+            Greetings! <br><br> I'm Po, and I specialize in building advanced web applications with Vue.js. <br>
           </p>
           <p>
             I have a background in art/design, and have a passion making digital experiences look, feel and work great.
-            Along with technology, I also enjoy strange things like crossfit and nerding out on chess and sci-fi. 🦾 🧘‍♂️
-            🤓 <br><br>
+            Along with technology, I also enjoy strange things like crossfit and nerding out on sci-fi. 🦾 🧘‍♂️
+            🤓<br><br>
             If you are interested in learning more, please feel free to get in touch!
             <br>
-            <!-- <span class="text-muted">
-              <small><em>
-                Hashtags: #Algorithms, #Design, #Javascript, #Vue.js, #HTML/CSS, #Git
-              </em></small>
-            </span> -->
           </p>
           <p class="text-right pt-2">
-            <a href="mailto: heys@rithfolio.com">Email</a>, <a href="https://github.com/jpoechill"
-              target="new">Github</a>, <a href="https://linkedin.com/in/porith" target="new">LinkedIn</a>
+            <a href="mailto: heys@rithfolio.com">Email</a>,
+            <a href="https://github.com/jpoechill" target="new">Github</a>,
+            <a href="https://www.notion.so/posblog/Po-s-Technology-Blog-d5360cafbfb046d8957bf6b456a4e75d"
+              target="new">Blog</a>,
+            <a href="https://linkedin.com/in/porith" target="new">LinkedIn</a>
           </p>
-          <!-- <p style="color: #777;">
-            <em>
-              Keywords: Design, Prototyping, Javascript, Vue.js, HTML/CSS, Git
-            </em>
-          </p> -->
         </div>
-        <!-- <div class="col-md-12 pt-5 mt-3">
-          <hr>
-        </div> -->
       </div>
     </div>
 
@@ -89,7 +79,6 @@
       <div class="container" style="opacity: 1!important;">
         <div class="row py-5">
           <div class="col-md-12 pb-5 px-5 text-center text-dark pt-5">
-            <!-- <hr class="pt-5 pb-1 my-5"> -->
             "I fear not the man who has practiced 10,000 kicks once, but I fear the man who has practiced one kick 10,000
             times."
             <br>
@@ -108,7 +97,7 @@ export default {
     return {
       projects: [
         {
-          title: 'Product Feedback App',
+          title: 'Product Feedback',
           description: 'A frontend, product feedback application made for managing feature requests for products and teams.',
           img: '/browser-12.png',
           url: 'https://compassionate-hugle-3311b0.netlify.app/',
@@ -124,7 +113,7 @@ export default {
           ]
         },
         {
-          title: 'Invoice App',
+          title: 'Invoices',
           description: 'A frontend, invoice application for managing and tracking invoices for entreprenuers and freelancers.',
           img: '/browser-13.jpg',
           url: 'https://sweet-muffin-869709.netlify.app/',
@@ -140,7 +129,7 @@ export default {
           ]
         },
         {
-          title: 'Simple To Do App',
+          title: 'Simple To Dos',
           description: 'A frontend, to-do application featuring light and dark modes, along persistent data with GraphQL.',
           img: '/todo_cover_rithfolio.png',
           url: 'https://todo-gql.vercel.app/',
